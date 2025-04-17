@@ -1,0 +1,23 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+  <item
+    android:id="@+id/calendar_fragment"
+    android:title="@string/calendar_nav_title"
+    android:icon="@drawable/calendar"/>
+
+  <item
+    android:id="@+id/favorites_fragment"
+    android:title="@string/favorites_nav_title"
+    android:icon="@drawable/favorite"/>
+
+  <item
+    android:id="@+id/birthday_fragment"
+    android:title="@string/birthday_nav_title"
+    android:icon="@drawable/birthday_cake"/>
+
+
+</menu>
+
+  <!--change this list to Settings(SETTINGS FRAGMENT), SHARE, AND ____ SOMETHING ELSE I FORGOT, STATS WITH S-->

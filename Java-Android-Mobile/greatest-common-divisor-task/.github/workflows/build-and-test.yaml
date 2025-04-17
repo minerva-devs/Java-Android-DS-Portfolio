@@ -1,0 +1,88 @@
+#  Copyright 2025 CNM Ingenuity, Inc.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+name: "Build and run included tests (if any)"
+
+on:
+
+  push:
+    paths:
+      - '.github/**'
+      - 'gradle/**'
+      - 'src/**'
+      - '*.gradle'
+      - '*.gradle.kts'
+      - 'gradle.properties'
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    name: "Build & test"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+
+    steps:
+
+      # Setup steps
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Validate Gradle wrapper
+        uses: gradle/actions/wrapper-validation@v4
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Make gradlew executable
+        run: "chmod +x ${{ github.workspace }}/gradlew"
+
+      - name: Clean
+        working-directory: ${{ github.workspace }}
+        run: "./gradlew clean"
+
+      # Build & test step
+
+      - name: Run tests
+        working-directory: ${{ github.workspace }}
+        run: "./gradlew test"
+
+      # Artifacts upload step
+
+      - name: Upload submitted tests report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report
+          path: ${{ github.workspace }}/build/reports/tests/test/**
+          if-no-files-found: ignore
+
+      # Test coverage reports upload step
+
+      - name: Upload submitted tests coverage report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-coverage-report
+          path: ${{ github.workspace }}/build/reports/jacoco/test/**
+          if-no-files-found: ignore

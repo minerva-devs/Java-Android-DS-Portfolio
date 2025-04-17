@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AppTheme" parent="Theme.Material3.DayNight">
+    <item name="colorCorrect">@color/correct</item>
+    <item name="colorIncorrect">@color/incorrect</item>
+    <!-- TODO Customize style attributes-->
+  </style>
+
+  <style name="ChoiceButton" parent="AppTheme">
+    <item name="android:textSize">@dimen/choice_text_size</item>
+    <item name="android:textColor">@color/choice_text</item>
+    <item name="android:background">@drawable/choice_background</item>
+  </style>
+
+  <style name="CurrentValue" parent="AppTheme">
+    <item name="android:autoSizeTextType">uniform</item>
+    <item name="android:autoSizeMinTextSize">@dimen/current_value_min_size</item>
+    <item name="android:autoSizeMaxTextSize">@dimen/current_value_max_size</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+
+  <style name="GameProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">x
+    <item name="android:progressDrawable">@drawable/game_progress</item>
+  </style>
+
+</resources>

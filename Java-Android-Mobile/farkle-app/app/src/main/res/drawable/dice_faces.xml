@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <item
+    android:drawable="@drawable/dice_face_1"
+    android:maxLevel="1"/>
+  <item
+    android:drawable="@drawable/dice_face_2"
+    android:maxLevel="2"/>
+  <item
+    android:drawable="@drawable/dice_face_3"
+    android:maxLevel="3"/>
+  <item
+    android:drawable="@drawable/dice_face_4"
+    android:maxLevel="4"/>
+  <item
+    android:drawable="@drawable/dice_face_5"
+    android:maxLevel="5"/>
+  <item
+    android:drawable="@drawable/dice_face_6"
+    android:maxLevel="6"/>
+
+</level-list>

@@ -1,0 +1,19 @@
+server:
+  error:
+    include-message: always
+  forward-headers-strategy: framework
+  port: 8091
+  servlet:
+    context-path: /farkle
+
+spring:
+  application:
+    name: service
+  jackson:
+    deserialization:
+      accept-float-as-int: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com

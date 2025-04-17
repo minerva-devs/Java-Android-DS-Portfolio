@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="horizontal"
+  android:gravity="center_vertical"
+  android:padding="@dimen/half_static_spacing">
+
+  <TextView
+    android:id="@+id/display_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    android:layout_weight="2"
+    style="@style/Player"
+    tools:text="JoHn"/>
+
+  <TextView
+    android:id="@+id/score"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    android:layout_weight="1"
+    style="@style/Player.Score"
+    tools:text="100000000"/>
+
+
+
+
+
+</LinearLayout>

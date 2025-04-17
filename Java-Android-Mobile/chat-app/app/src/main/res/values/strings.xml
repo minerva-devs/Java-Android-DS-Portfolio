@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="sign_in_failure_message">Unable to sign in with provided credentials</string>
+  <string name="sign_out_title">Sign out</string>
+  <string name="login_fragment_label">Sign In</string>
+  <string name="new_message_hint">New Message</string>
+  <string name="send_message_description">Send Message</string>
+
+</resources>

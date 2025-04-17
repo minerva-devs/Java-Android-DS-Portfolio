@@ -1,0 +1,36 @@
+a	b	Expected value of gcd(a, b)
+65,39,13
+39,65,13
+65,119,1
+12319,9017,127
+
+-65,39,13
+65,-39,13
+-65,-39,13
+
+65,0,65
+0,39,39
+0,0,0
+
+    Arguments.of(48L, 18L, 6L),
+            Arguments.of(56L, 98L, 14L),
+            Arguments.of(101L, 103L, 1L),
+            Arguments.of(270L, 192L, 6L),
+            Arguments.of(0L, 5L, 5L),
+            Arguments.of(5L, 0L, 5L),
+            Arguments.of(0L, 0L, 0L),
+            Arguments.of(-48L, 18L, 6L),
+            Arguments.of(48L, -18L, 6L),
+            Arguments.of(-48L, -18L, 6L)
+
+            Arguments.of(new long[]{}, 0L),
+            Arguments.of(new long[]{49L}, 49L),
+            Arguments.of(new long[]{49L, 49L}, 49L),
+            Arguments.of(new long[]{182L, 78L}, 26L),
+            Arguments.of(new long[]{182L, 70L, 49L}, 7L),
+            Arguments.of(new long[]{70L, 56L, 182L}, 14L),
+            Arguments.of(new long[]{55L, 182L, 70L}, 1L),
+            Arguments.of(new long[]{70L, 56L, 0L, 182L}, 14L),
+            Arguments.of(new long[]{180L, 98L, 63L, 77L, 35L}, 1L)
+        );
+      }

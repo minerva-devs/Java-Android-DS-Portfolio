@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.cnm.deepdive.nasaapod.controller</OriginalElement>
+  <nodes>
+    <node x="504.0" y="14.0">edu.cnm.deepdive.nasaapod.adapter.DayBinder.DayHolder</node>
+    <node x="-207.0" y="-193.0">edu.cnm.deepdive.nasaapod.model.entity.Apod</node>
+    <node x="810.5" y="-8.0">edu.cnm.deepdive.nasaapod.controller.ImageFragment.ImageCallback</node>
+    <node x="937.0" y="737.0">edu.cnm.deepdive.nasaapod.controller.MainActivity</node>
+    <node x="719.0" y="-193.0">edu.cnm.deepdive.nasaapod.controller.ImageFragment</node>
+    <node x="305.0" y="24.0">edu.cnm.deepdive.nasaapod.adapter.DayBinder.OnApodClickListener</node>
+    <node x="520.0" y="957.0">edu.cnm.deepdive.nasaapod.hilt.PicassoModule</node>
+    <node x="524.0" y="737.0">edu.cnm.deepdive.nasaapod.hilt.ProxyModule</node>
+    <node x="777.0" y="957.0">edu.cnm.deepdive.nasaapod.NasaApodApplication</node>
+    <node x="174.0" y="737.0">edu.cnm.deepdive.nasaapod.service.ApodRepository</node>
+    <node x="-220.0" y="737.0">edu.cnm.deepdive.nasaapod.controller.CalendarFragment</node>
+    <node x="-220.0" y="957.0">edu.cnm.deepdive.nasaapod.service.ApodProxyService</node>
+    <node x="645.0" y="580.0">edu.cnm.deepdive.nasaapod.adapter.HeaderBinder.HeaderHolder</node>
+    <node x="367.75" y="-193.0">edu.cnm.deepdive.nasaapod.adapter.DayBinder</node>
+    <node x="7.0" y="-47.0">edu.cnm.deepdive.nasaapod.service.ApodDatabase.Converters</node>
+    <node x="210.0" y="957.0">edu.cnm.deepdive.nasaapod.hilt.DatabaseModule</node>
+    <node x="208.0" y="455.0">edu.cnm.deepdive.nasaapod.model.dao.ApodDao</node>
+    <node x="-220.0" y="293.0">edu.cnm.deepdive.nasaapod.model.entity.Apod.MediaType</node>
+    <node x="64.0" y="-193.0">edu.cnm.deepdive.nasaapod.service.ApodDatabase</node>
+    <node x="603.0" y="455.0">edu.cnm.deepdive.nasaapod.adapter.HeaderBinder</node>
+    <node x="-220.0" y="455.0">edu.cnm.deepdive.nasaapod.viewmodel.ApodViewModel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.cnm.deepdive.nasaapod.adapter.HeaderBinder.HeaderHolder" target="edu.cnm.deepdive.nasaapod.adapter.HeaderBinder" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="edu.cnm.deepdive.nasaapod.service.ApodDatabase.Converters" target="edu.cnm.deepdive.nasaapod.service.ApodDatabase" relationship="INNER_CLASS">
+      <point x="0.0" y="-77.5" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="edu.cnm.deepdive.nasaapod.model.entity.Apod.MediaType" target="edu.cnm.deepdive.nasaapod.model.entity.Apod" relationship="INNER_CLASS">
+      <point x="0.0" y="-58.5" />
+      <point x="0.0" y="218.0" />
+    </edge>
+    <edge source="edu.cnm.deepdive.nasaapod.controller.ImageFragment.ImageCallback" target="edu.cnm.deepdive.nasaapod.controller.ImageFragment" relationship="INNER_CLASS">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="edu.cnm.deepdive.nasaapod.adapter.DayBinder.OnApodClickListener" target="edu.cnm.deepdive.nasaapod.adapter.DayBinder" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.5" />
+      <point x="394.5" y="-11.0" />
+      <point x="491.75" y="-11.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="edu.cnm.deepdive.nasaapod.adapter.DayBinder.DayHolder" target="edu.cnm.deepdive.nasaapod.adapter.DayBinder" relationship="INNER_CLASS">
+      <point x="0.0" y="-37.5" />
+      <point x="589.0" y="-11.0" />
+      <point x="491.75" y="-11.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4379446640316206" showDependencies="false" x="472.5" y="439.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

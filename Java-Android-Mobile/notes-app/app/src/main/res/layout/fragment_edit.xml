@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="@dimen/half_dynamic_spacing">
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/title_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/image"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintHorizontal_weight="8">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      android:hint="@string/title_hint"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/content_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/half_dynamic_spacing"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:layout_constraintStart_toStartOf="@id/title_layout"
+    app:layout_constraintEnd_toEndOf="@id/title_layout"
+    app:layout_constraintTop_toBottomOf="@id/title_layout">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textMultiLine"
+      android:minLines="@integer/content_lines"
+      android:maxLines="@integer/content_lines"
+      android:hint="@string/content_hint"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!--  suppressed imageview msg and at compilation the error/msg won't be displayed/ignored.-->
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    app:layout_constraintStart_toEndOf="@id/title_layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintHorizontal_weight="4"
+    tools:src="@android:drawable/gallery_thumb"
+    tools:ignore="ContentDescription"/>
+
+  <androidx.constraintlayout.widget.Barrier
+    android:id="@+id/button_barrier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:barrierDirection="bottom"
+    app:constraint_referenced_ids="content_layout,image"/>
+
+  <ImageButton
+    android:id="@+id/save"
+    android:layout_width="@dimen/image_button_size"
+    android:layout_height="@dimen/image_button_size"
+    android:src="@drawable/save"
+    app:tint="?attr/colorSave"
+    android:scaleType="fitCenter"
+    android:tooltipText="@string/save_tooltip"
+    android:contentDescription="@string/save_tooltip"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    android:background="?selectableItemBackgroundBorderless"
+    app:layout_constraintTop_toBottomOf="@id/button_barrier"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/cancel"
+    app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+  <ImageButton
+    android:id="@+id/cancel"
+    android:layout_width="@dimen/image_button_size"
+    android:layout_height="@dimen/image_button_size"
+    android:src="@drawable/cancel"
+    app:tint="?attr/colorCancel"
+    android:scaleType="fitCenter"
+    android:tooltipText="@string/cancel_tooltip"
+    android:contentDescription="@string/cancel_tooltip"
+    android:layout_marginHorizontal="@dimen/half_dynamic_spacing"
+    android:background="?selectableItemBackgroundBorderless"
+    app:layout_constraintStart_toEndOf="@id/save"
+    app:layout_constraintEnd_toStartOf="@id/capture"
+    app:layout_constraintTop_toTopOf="@id/save"/>
+
+  <ImageButton
+    android:id="@+id/capture"
+    android:layout_width="@dimen/image_button_size"
+    android:layout_height="@dimen/image_button_size"
+    android:src="@drawable/photo"
+    android:scaleType="fitCenter"
+    android:tooltipText="@string/capture_tooltip"
+    android:contentDescription="@string/capture_tooltip"
+    android:layout_marginHorizontal="@dimen/half_dynamic_spacing"
+    android:background="?selectableItemBackgroundBorderless"
+    app:layout_constraintStart_toEndOf="@id/cancel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/save"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

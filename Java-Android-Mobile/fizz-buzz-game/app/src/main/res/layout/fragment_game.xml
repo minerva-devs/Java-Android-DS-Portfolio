@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/half_dynamic_spacing"
+  tools:context=".controller.GameFragment">
+
+  <ToggleButton
+    android:id="@+id/neither"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    android:textOn="@string/neither_label"
+    android:textOff="@string/neither_label"
+    style="@style/ChoiceButton"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintWidth_percent="0.5"
+    app:layout_constraintWidth_min="@dimen/min_choice_width"/>
+
+  <com.google.android.material.progressindicator.CircularProgressIndicator
+    android:id="@+id/timer_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    app:trackThickness="@dimen/timer_ring_width"
+    app:layout_constraintStart_toEndOf="@id/fizz"
+    app:layout_constraintEnd_toStartOf="@id/buzz"
+    app:layout_constraintTop_toTopOf="@id/fizz"
+    app:layout_constraintBottom_toBottomOf="@id/fizz"/>
+
+  <ToggleButton
+    android:id="@+id/fizz"
+    android:layout_width="@dimen/min_choice_width"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/choice_edge_offset"
+    android:textOn="@string/fizz_title"
+    android:textOff="@string/fizz_title"
+    style="@style/ChoiceButton"
+    android:rotation="-90"
+    app:layout_constraintTop_toBottomOf="@id/neither"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/fizz_buzz"
+    app:layout_constraintWidth_min="@dimen/min_choice_width"/>
+
+  <TextView
+    android:id="@+id/current"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:gravity="center"
+    style="@style/CurrentValue"
+    app:layout_constraintTop_toBottomOf="@id/neither"
+    app:layout_constraintStart_toEndOf="@id/fizz"
+    app:layout_constraintEnd_toStartOf="@id/buzz"
+    app:layout_constraintBottom_toTopOf="@id/fizz_buzz"
+    tools:text="98"/>
+
+  <ToggleButton
+    android:id="@+id/buzz"
+    android:layout_width="@dimen/min_choice_width"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/choice_edge_offset"
+    android:textOn="@string/buzz_title"
+    android:textOff="@string/buzz_title"
+    style="@style/ChoiceButton"
+    android:rotation="90"
+    app:layout_constraintTop_toTopOf="@id/fizz"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="@id/fizz"
+    app:layout_constraintWidth_min="@dimen/min_choice_width"/>
+
+  <ToggleButton
+    android:id="@+id/fizz_buzz"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    android:textOn="@string/fizz_buzz_label"
+    android:textOff="@string/fizz_buzz_label"
+    style="@style/ChoiceButton"
+    app:layout_constraintBottom_toTopOf="@id/progress"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintWidth_percent="0.5"
+    app:layout_constraintWidth_min="@dimen/min_choice_width"/>
+
+  <ProgressBar
+    android:id="@+id/progress"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/progress_height"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    style="@style/GameProgress"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  app:startDestination="@id/calendar_fragment">
+
+  <fragment
+    android:id="@+id/calendar_fragment"
+    android:label="@string/app_name"
+    android:name="edu.cnm.deepdive.spaceseek.controller.CalendarFragment"
+    tools:layout="@layout/fragment_calendar">
+
+    <action
+      android:id="@+id/show_image"
+      app:destination="@id/image_fragment">
+
+      <argument
+        android:name="apod_id"
+        app:argType="long"/>
+
+    </action>
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/image_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.ImageFragment"
+    tools:layout="@layout/fragment_image">
+
+    <argument
+      android:name="apod_id"
+      app:argType="long"/>
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/settings_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.SettingsFragment"
+    android:label="Settings"
+    tools:layout="@layout/fragment_settings" />
+
+  <fragment
+    android:id="@+id/favorites_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.FavoritesFragment"
+    android:label="Favorites"
+    tools:layout="@layout/fragment_favorites" />
+
+
+</navigation>
+
+
+  <!--android:name=  asks what fragments we have-->
+  <!--android:label=appname in gradleResValues.xml-->

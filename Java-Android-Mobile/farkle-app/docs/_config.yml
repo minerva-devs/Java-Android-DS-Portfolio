@@ -1,0 +1,19 @@
+remote_theme: ddc-java/ddc-day-book
+
+title: "Farkle"
+
+author:
+  name: Minerva Franco, BillTheMaker, Aaron Halbig
+
+repository_link:
+  enabled: false
+page_navigator:
+  enabled: true
+titles_from_headings:
+  enabled: false
+prev_next_navigation:
+  - bottom
+
+kramdown:
+  toc_levels: 2..3
+

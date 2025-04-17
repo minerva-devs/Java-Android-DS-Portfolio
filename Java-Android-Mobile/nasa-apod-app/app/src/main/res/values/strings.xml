@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <string name="first_apod_date" tools:ignore="TypographyDashes">1995-06-16</string>
+
+  <string name="year_month_format">MMM yyyy</string>
+  <string name="image_load_error_message">Unable to retrieve image</string>
+
+  <string name="apod_tooltip_format">[%1$s] %2$s</string>
+  <string name="image_error_message">Unable to retrieve APOD image</string>
+
+  <string-array name="media_types">
+    <item>Image</item>
+    <item>Video</item>
+  </string-array>
+
+
+</resources>

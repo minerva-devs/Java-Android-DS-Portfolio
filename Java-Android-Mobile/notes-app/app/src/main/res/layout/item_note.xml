@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:gravity="start|center_vertical"
+  android:padding="@dimen/half_dynamic_spacing">
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="8"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    tools:text="This is a very important note"/>
+
+  <TextView
+    android:id="@+id/modified_on"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    android:layout_margin="@dimen/half_dynamic_spacing"
+    tools:text="2025-02-13 15:00"/>
+
+</LinearLayout>

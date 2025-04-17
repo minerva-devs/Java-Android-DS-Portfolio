@@ -1,0 +1,11 @@
+name, calculator, updater, partitions
+Single-threaded, edu.cnm.deepdive.concurrency.singlethreaded.SingleThreaded, ,
+Single worker thread, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaThreads, edu.cnm.deepdive.concurrency.multithreaded.updater.RaceCondition, 1
+Executor w/ single task, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaExecutor, edu.cnm.deepdive.concurrency.multithreaded.updater.RaceCondition, 1
+Multiple worker threads w/ race condition, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaThreads, edu.cnm.deepdive.concurrency.multithreaded.updater.RaceCondition, 16
+Executor w/ race condition, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaExecutor, edu.cnm.deepdive.concurrency.multithreaded.updater.RaceCondition, 16
+Multiple worker threads w/ critical section, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaThreads, edu.cnm.deepdive.concurrency.multithreaded.updater.CriticalSection, 16
+Executor w/ critical section, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaExecutor, edu.cnm.deepdive.concurrency.multithreaded.updater.CriticalSection, 16
+Multiple worker threads w/ reduced critical section, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaThreads, edu.cnm.deepdive.concurrency.multithreaded.updater.Reduction, 16
+Executor w/ reduced critical section, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaExecutor, edu.cnm.deepdive.concurrency.multithreaded.updater.Reduction, 16
+Fork-join pool, edu.cnm.deepdive.concurrency.multithreaded.DomainDecompositionViaRecursion, , 16

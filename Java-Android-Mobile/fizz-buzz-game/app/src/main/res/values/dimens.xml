@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="half_dynamic_spacing">8dp</dimen>
+  <dimen name="min_choice_width">140dp</dimen>
+  <dimen name="min_side_choice_width">130dp</dimen>
+  <dimen name="min_side_choice_height">130dp</dimen>
+  <dimen name="choice_text_size">24sp</dimen>
+  <dimen name="current_value_min_size">48sp</dimen>
+  <dimen name="current_value_max_size">72sp</dimen>
+  <dimen name="choice_button_radius">8dp</dimen>
+  <dimen name="choice_edge_offset">-40dp</dimen>
+  <dimen name="timer_ring_width">40dp</dimen>
+  <dimen name="progress_height">24dp</dimen>
+  <dimen name="progress_stroke_width">1dp</dimen>
+
+</resources>

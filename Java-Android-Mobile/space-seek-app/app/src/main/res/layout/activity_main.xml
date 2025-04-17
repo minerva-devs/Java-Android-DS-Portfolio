@@ -1,0 +1,48 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/main_activity"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <!-- Toolbar -->
+  <com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="@string/app_name"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <!-- Navigation Host -->
+  <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/nav_host_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/nav_graph"
+    app:layout_constraintTop_toBottomOf="@id/toolbar"
+    app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"/>
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:menu="@menu/main_nav"
+    app:itemIconTint="@color/navigation_item_icon_tint"
+    app:itemTextColor="@color/nebula_black"
+    app:labelVisibilityMode="labeled"
+    android:elevation="8dp"/>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/show_random"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:useCompatPadding="true"
+    app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
+    app:layout_constraintEnd_toEndOf="parent"/>
+  <!--  TODO 3/29/25 ADD DRAWABLE, & TOOLTIP, context description should be the exact same for both-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

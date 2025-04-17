@@ -1,0 +1,3 @@
+sequence,expectedException
+"ATATXCGC",java.lang.IllegalArgumentException
+"ATcgAtcu",java.lang.IllegalArgumentException

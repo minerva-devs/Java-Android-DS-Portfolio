@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="toolbar_title_size">20sp</dimen>
+  <dimen name="half_dynamic_spacing">8dp</dimen>
+  <dimen name="image_button_size">48dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+edu.cnm.deepdive.spaceseek
+edu.cnm.deepdive.spaceseek.adapter
+edu.cnm.deepdive.spaceseek.controller
+edu.cnm.deepdive.spaceseek.hilt
+edu.cnm.deepdive.spaceseek.model.dao
+edu.cnm.deepdive.spaceseek.model.entity
+edu.cnm.deepdive.spaceseek.service
+edu.cnm.deepdive.spaceseek.viewmodel

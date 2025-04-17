@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle">
+  <solid android:color="#673AB7" />
+  <corners
+    android:topLeftRadius="24dp"
+    android:topRightRadius="24dp"
+    android:bottomLeftRadius="8dp"
+    android:bottomRightRadius="8dp"/>
+</shape>

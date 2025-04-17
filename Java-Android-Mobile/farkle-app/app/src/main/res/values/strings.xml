@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="sign_in_failure_message">Unable to sign in with provided credentials</string>
+  <string name="sign_out_title">Sign out</string>
+  <string name="login_fragment_label">Sign In</string>
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="player_display_name">player</string>
+  <string name="opponent_display_name">Opponent</string>
+  <string name="game_fragment_label">Farkle</string>
+  <string name="quit_game_label">Home</string>
+  <string name="end_turn_label">End Turn</string>
+  <string name="submit_choice_label">Submit</string>
+  <string name="dice_1_label">Dice 1</string>
+  <string name="dice_2_label">Dice 2</string>
+  <string name="dice_3_label">Dice 3</string>
+  <string name="dice_4_label">Dice 4</string>
+  <string name="dice_5_label">Dice 5</string>
+  <string name="dice_6_label">Dice 6</string>
+  <string name="opponent_score">Opponent score</string>
+  <string name="player_score">Player score</string>
+  <string name="select_group_label">Save Dice</string>
+  <string name="clear_scoring_groups_label">Clear</string>
+  <string name="app_logo_description">Farkle app launcher</string>
+  <string name="server_side_stack">Server-side</string>
+  <string name="android_core">Android</string>
+  <string name="ui_label">UI/ Client-side</string>
+  <string name="android_core_logo">Android Core Logo</string>
+  <string name="android_core_label">Android Core visual representation</string>
+  <string name="android_core_display">ANDROID</string>
+  <string name="database_layer">Database Layer</string>
+  <string name="security_layer">Security Layer</string>
+  <string name="dependencies_diagram">Android App\nDevelopment</string>
+  <string name="programming_language_diagram">PROGRAMMING LANGUAGE</string>
+  <string name="java_icon_text">Java</string>
+  <string name="kotlin_icon_text">Kotlin</string>
+  <string name="tool_kit_diagram_category">TOOL KIT</string>
+  <string name="android_studio_dev_tools_diagram_text"><![CDATA[Android Studio & Development\nTools]]></string>
+  <string name="sdk_diagram_category">SDK</string>
+  <string name="android_sdk_icon_text">Android SDK</string>
+  <string name="android_studio_dev_tools_icon">android</string>
+  <string name="kotlin_logo">kotlin_logo</string>
+</resources>

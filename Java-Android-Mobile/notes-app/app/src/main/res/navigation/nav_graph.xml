@@ -1,0 +1,82 @@
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/pre_login_fragment">
+
+  <fragment
+    android:id="@+id/pre_login_fragment"
+    android:name="edu.cnm.deepdive.notes.controller.PreLoginFragment"
+    tools:layout="@layout/fragment_pre_login">
+
+    <action
+      android:id="@+id/navigate_to_login_fragment"
+      app:destination="@id/login_fragment"
+      app:popUpTo="@id/nav_graph"/>
+
+    <action
+      android:id="@+id/navigate_to_home_fragment"
+      app:destination="@id/home_fragment"
+      app:popUpTo="@id/nav_graph"/>
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/login_fragment"
+    android:name="edu.cnm.deepdive.notes.controller.LoginFragment"
+    android:label="@string/login_fragment_label"
+    tools:layout="@layout/fragment_login">
+
+    <action
+      android:id="@+id/navigate_to_home_fragment"
+      app:destination="@id/home_fragment"
+      app:popUpTo="@id/nav_graph"/>
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/home_fragment"
+    android:name="edu.cnm.deepdive.notes.controller.HomeFragment"
+    android:label="@string/home_fragment_label"
+    tools:layout="@layout/fragment_home">
+
+    <action
+      android:id="@+id/navigate_to_pre_login_fragment"
+      app:destination="@id/pre_login_fragment"
+      app:popUpTo="@id/nav_graph"/>
+
+    <action
+      android:id="@+id/open_edit_fragment"
+      app:destination="@id/edit_fragment">
+
+      <argument
+        android:name="note_id"
+        app:argType="long"
+        android:defaultValue="0L"/>
+
+    </action>
+
+    <action
+      android:id="@+id/open_explanation_fragment"
+      app:destination="@id/explanation_fragment"/>
+
+  </fragment>
+
+  <dialog
+    android:id="@+id/edit_fragment"
+    android:name="edu.cnm.deepdive.notes.controller.EditFragment"
+    tools:layout="@layout/fragment_edit">
+
+    <argument
+      android:name="note_id"
+      app:argType="long"
+      android:defaultValue="0L"/>
+
+  </dialog>
+
+  <dialog
+    android:id="@+id/explanation_fragment"
+    android:name="edu.cnm.deepdive.notes.controller.ExplanationFragment"/>
+
+</navigation>

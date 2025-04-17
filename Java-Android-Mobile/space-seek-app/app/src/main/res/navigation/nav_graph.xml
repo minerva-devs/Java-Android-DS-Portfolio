@@ -1,0 +1,140 @@
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/pre_login_fragment">
+
+  <!-- Step 1: App starts at PreLoginFragment -->
+
+  <action
+    android:id="@+id/navigate_to_settings_fragment"
+    app:destination="@id/settings_fragment"/>
+
+  <action
+    android:id="@+id/navigate_to_pre_login_fragment"
+    app:destination="@+id/pre_login_fragment"
+    app:popUpTo="@id/nav_graph"/>
+
+  <action
+    android:id="@+id/navigate_to_image_fragment"
+    app:destination="@id/image_fragment"/>
+
+  <!-- PreLoginFragment: Checks login status -->
+  <fragment
+    android:id="@+id/pre_login_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.PreLoginFragment"
+    tools:layout="@layout/fragment_pre_login">
+    <!-- Step 2: If user is not logged in, navigate to LoginFragment -->
+    <action
+      android:id="@+id/navigate_to_login_fragment"
+      app:destination="@id/login_fragment"
+      app:popUpTo="@id/nav_graph"/>
+    <!--  If user is logged in, navigate directly to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/nav_graph"/>
+  </fragment>
+
+  <!-- LoginFragment: Handles user login  -->
+  <fragment
+    android:id="@+id/login_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.LoginFragment"
+    tools:layout="@layout/fragment_login">
+    <!-- Step 3: After successful login, navigate to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/nav_graph"/>
+  </fragment>
+
+  <!-- ImageFragment: Main Content screen -->
+  <fragment
+    android:id="@+id/image_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.ImageFragment"
+    tools:layout="@layout/fragment_image">
+
+    <argument
+      android:name="apodId"
+      app:argType="long"/>
+
+    <!-- Step 4: User can navigate to other sections from here -->
+    <action
+      android:id="@+id/navigate_to_favorites_fragment"
+      app:destination="@+id/favorites_fragment"
+      app:popUpTo="@id/nav_graph"/>
+    <action
+      android:id="@+id/navigate_to_calendar_fragment"
+      app:destination="@+id/calendar_fragment"
+      app:popUpTo="@id/nav_graph"/>
+    <action
+      android:id="@+id/navigate_to_birthday_fragment"
+      app:destination="@+id/birthday_fragment"
+      app:popUpTo="@id/nav_graph"/>
+  </fragment>
+
+  <!-- CalendarFragment -->
+  <fragment
+    android:id="@+id/calendar_fragment"
+    android:label="@string/app_name"
+    android:name="edu.cnm.deepdive.spaceseek.controller.CalendarFragment"
+    tools:layout="@layout/fragment_calendar">
+
+    <!-- Step 5: User can return to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/image_fragment"/>
+    <argument
+      android:name="apod_id"
+      app:argType="long"/>
+  </fragment>
+
+  <!-- ListFragment for Favorites -->
+  <fragment
+    android:id="@+id/favorites_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.ListFragment"
+    android:label="Settings"
+    tools:layout="@layout/fragment_image">
+    <argument
+      android:name="list_type"
+      app:argType="edu.cnm.deepdive.spaceseek.controller.ListFragment$ListType"
+      android:defaultValue="FAVORITES"
+      tools:layout="@layout/fragment_image"/>
+    <!-- Step 6: User can return to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/image_fragment"/>
+  </fragment>
+
+
+  <!-- ListFragment for Birthday -->
+  <fragment
+    android:id="@+id/birthday_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.ListFragment"
+    tools:layout="@layout/fragment_list">
+    <argument
+      android:name="list_type"
+      app:argType="edu.cnm.deepdive.spaceseek.controller.ListFragment$ListType"
+      android:defaultValue="BIRTHDAY"/>
+    <!-- Step 7: User can return to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/image_fragment"/>
+  </fragment>
+
+  <!-- SettingsFragment -->
+  <fragment
+    android:id="@+id/settings_fragment"
+    android:name="edu.cnm.deepdive.spaceseek.controller.SettingsFragment"
+    tools:layout="@layout/fragment_settings">
+    <!-- Step 8: User can return to ImageFragment -->
+    <action
+      android:id="@+id/navigate_to_image_fragment"
+      app:destination="@id/image_fragment"
+      app:popUpTo="@id/image_fragment"/>
+  </fragment>
+</navigation>

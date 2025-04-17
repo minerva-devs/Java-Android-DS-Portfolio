@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <SeekBarPreference
+    app:key="@string/num_rounds_key"
+    app:title="@string/num_rounds_title"
+    app:min="5"
+    android:max="50"
+    android:defaultValue="10"
+    app:showSeekBarValue="true"
+    android:icon="@drawable/number"/>
+
+  <SeekBarPreference
+    app:key="@string/time_limit_key"
+    app:title="@string/time_limit_title"
+    app:min="@integer/time_limit_min"
+    android:max="@integer/time_limit_max"
+    android:defaultValue="@integer/time_limit_default"
+    app:showSeekBarValue="true"
+    android:icon="@drawable/timer"/>
+
+  <SeekBarPreference
+    app:key="@string/digit_length_key"
+    app:title="@string/digit_length_title"
+    android:summary="@string/digit_length_summary"
+    app:min="@integer/digit_length_min"
+    android:max="@integer/digit_length_max"
+    android:defaultValue="@integer/digit_length_default"
+    app:showSeekBarValue="true"
+    android:icon="@drawable/digit_length"/>
+
+
+</PreferenceScreen>

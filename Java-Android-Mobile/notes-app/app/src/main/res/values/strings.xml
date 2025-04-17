@@ -1,0 +1,18 @@
+<resources>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="new_note_description">Create a new note</string>
+  <string name="edit_note">Edit</string>
+  <string name="delete_note">Delete</string>
+  <string name="title_hint">Title</string>
+  <string name="content_hint">Type stuff</string>
+  <string name="save_tooltip">Save current note</string>
+  <string name="cancel_tooltip">Cancel changes</string>
+  <string name="capture_tooltip">Capture image from camera or gallery</string>
+  <string name="home_fragment_label">Notes</string>
+  <string name="camera_permission_explanation">Granting permission to access camera allows app to attach an image to each note</string>
+  <string name="camera_permission_title">Camera permission title</string>
+  <string name="capture_directory">captured-images</string>
+  <string name="login_fragment_label">Sign In</string>
+  <string name="sign_in_failure_message">Unable to sign in with provided credentials</string>
+  <string name="sign_out_title">Sign out</string>
+</resources>

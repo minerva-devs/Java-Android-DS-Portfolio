@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:gravity="center">
+
+  <!-- App Launcher Icon -->
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/farkle_splash_background"
+    tools:layout_editor_absoluteX="-121dp"
+    tools:layout_editor_absoluteY="-46dp"/>
+
+  <ImageView
+      android:id="@+id/launcher_icon"
+      android:layout_width="256dp"
+      android:layout_height="wrap_content"
+      android:scaleType="fitCenter"
+      android:adjustViewBounds="true"
+      android:src="@drawable/farkle_intro"
+      android:contentDescription="@string/app_logo_description"
+    app:layout_constraintVertical_chainStyle="spread"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/credits"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+    android:id="@+id/credits"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/app_credits"
+    android:textAlignment="center"
+    android:textColor="@color/common_google_signin_btn_text_dark"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/launcher_icon"
+    app:layout_constraintBottom_toTopOf="@id/loading_indicator"
+    app:layout_constraintStart_toStartOf="@id/launcher_icon"
+    app:layout_constraintEnd_toEndOf="@id/launcher_icon"/>
+
+
+  <!-- Loading Indicator -->
+  <ProgressBar
+    android:id="@+id/loading_indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:indeterminateTint="#fedd00"
+    app:layout_constraintTop_toBottomOf="@id/credits"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

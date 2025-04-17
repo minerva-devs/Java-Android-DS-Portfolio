@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: chat
+  profiles:
+    active:
+      - service
+      - local
+  datasource:
+    url: "jdbc:h2:file:./db/chat"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always

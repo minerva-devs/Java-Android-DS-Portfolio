@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <attr name="toolbarTitleSize" format="dimension|reference"/>
+  <attr name="colorSave" format="color|reference"/>
+  <attr name="colorCancel" format="color|reference"/>
+</resources>

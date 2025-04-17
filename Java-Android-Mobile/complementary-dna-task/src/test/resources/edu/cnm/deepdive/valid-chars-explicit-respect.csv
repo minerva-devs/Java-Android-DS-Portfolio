@@ -1,0 +1,9 @@
+sequence,  respectCase, expected
+"AtaTGcgC" , true , "TatACgcG"
+"GCctTtaAAaTTtcCG" , true , "CGgaAatTTtAAagGC"
+"ATcgAtcG" , true , "TAgcTagC"
+"CccCGggTta" , true , "GggGCccAat"
+"AtaTGcgC" , false , "TATACGCG"
+"GCctTtaAAaTTtcCG" , false , "CGGAAATTTTAAAGGC"
+"ATcgAtcG" , false , "TAGCTAGC"
+"CccCGggTta" , false , "GGGGCCCAAT"

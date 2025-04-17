@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <SwitchPreferenceCompat
+    android:key="dark_mode"
+    android:title="Dark Mode"
+    android:summary="Enable or disable dark mode"
+    android:defaultValue="false" />
+
+  <SwitchPreferenceCompat
+    android:key="notifications"
+    android:title="Notifications"
+    android:summary="Turn notifications on or off"
+    android:defaultValue="true" />
+
+  <EditTextPreference
+    android:key="dob"
+    android:title="Date of Birth"
+    android:summary="Enter your date of birth"
+    android:dialogTitle="Date of Birth"
+    android:inputType="date" />
+
+</PreferenceScreen>

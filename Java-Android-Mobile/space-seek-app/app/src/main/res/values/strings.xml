@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Global Strings -->
+  <string name="first_apod_date" tools:ignore="TypographyDashes">1995-06-16</string>
+  <string name="year_month_format">MMM yyyy</string>
+  <string name="image_load_error_message">Entropy wins(no image loaded)</string>
+  <string name="image_error_message">Galactic Graveyard of APoDs</string>
+  <string name="sign_in_with_google"> Enter your Google credentials. No one can hear you unsubscribe in space anyway..</string>
+
+  <!-- APOD Screen Strings -->
+  <string name="apod_title">NASA Astronomy Picture of the Day</string>
+  <string name="apod_image_description">APoD image for the selected date</string>
+  <string name="random_apod">Random APoD</string>
+  <string name="space_seek_logo">SpaceSeek</string>
+  <string name="favorite_button_description">Mark as Favorite</string>
+  <string name="date_selection_button_description">Select Date</string>
+  <string name="share_button_description">Share APOD</string>
+  <string name="error_loading_apod">Spaghettification happens. Please try again later.</string>
+  <string name="loading_apod">Spacetime is relative. So is this wait.</string>
+
+  <!-- Tooltip Format Strings -->
+  <string name="apod_tooltip_format">[%1$s] %2$s</string>
+  <string name="settings_label">Settings</string>
+  <string name="fetch_random_apods">"Pick a random APoD. Who cares "</string>
+  <string name="sign_out_title">Sign out</string>
+  <string name="calendar_nav_title">Calendar</string>
+  <string name="favorites_nav_title">Favorites</string>
+  <string name="birthday_nav_title">Birthday APoDs</string>
+  <string name="sign_in_failure_message">Unable to sign in with provided credentials.</string>
+
+  <!-- Arrays -->
+  <string-array name="media_types">
+    <item>Image</item>
+    <item>Video</item>
+  </string-array>
+
+</resources>

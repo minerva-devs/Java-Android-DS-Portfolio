@@ -1,0 +1,27 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:padding="16dp"
+  android:background="@drawable/background_opposite_gradient">
+
+  <!-- App Launcher Icon -->
+  <!-- DO NOT NEED BACKGROUND FOR THIS?
+    <ImageView
+      android:id="@+id/launcher_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_launcher_foreground"
+      android:contentDescription="@string/app_logo_description"/>
+  -->
+
+  <!-- Loading Indicator -->
+  <ProgressBar
+    android:id="@+id/loading_indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:layout_marginTop="24dp"/>
+</LinearLayout>

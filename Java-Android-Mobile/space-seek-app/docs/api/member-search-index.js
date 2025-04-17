@@ -1,0 +1,635 @@
+memberSearchIndex = [{
+  "p": "edu.cnm.deepdive.spaceseek.model.entity",
+  "c": "Apod",
+  "l": "Apod()",
+  "u": "%3Cinit%3E()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodDatabase",
+  "l": "ApodDatabase()",
+  "u": "%3Cinit%3E()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "ApodRepository(Context, ApodProxyService, ApodDao)",
+  "u": "%3Cinit%3E(android.content.Context,edu.cnm.deepdive.spaceseek.service.ApodProxyService,edu.cnm.deepdive.spaceseek.model.dao.ApodDao)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "AuthService",
+  "l": "AuthService(Context)",
+  "u": "%3Cinit%3E(android.content.Context)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder.DayHolder",
+  "l": "bind(CalendarDay)",
+  "u": "bind(com.kizitonwose.calendar.core.CalendarDay)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder",
+  "l": "bind(ViewContainer, CalendarDay)",
+  "u": "bind(com.kizitonwose.calendar.view.ViewContainer,com.kizitonwose.calendar.core.CalendarDay)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "HeaderBinder",
+  "l": "bind(ViewContainer, CalendarMonth)",
+  "u": "bind(com.kizitonwose.calendar.view.ViewContainer,com.kizitonwose.calendar.core.CalendarMonth)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.controller",
+  "c": "ListFragment.ListType",
+  "l": "BIRTHDAY"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.controller",
+  "c": "CalendarFragment",
+  "l": "CalendarFragment()",
+  "u": "%3Cinit%3E()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "AuthService",
+  "l": "completeSignIn(ActivityResult)",
+  "u": "completeSignIn(androidx.activity.result.ActivityResult)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "LoginViewModel",
+  "l": "completeSignIn(ActivityResult)",
+  "u": "completeSignIn(androidx.activity.result.ActivityResult)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodDatabase.Converters",
+  "l": "Converters()",
+  "u": "%3Cinit%3E()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder",
+  "l": "create(View)",
+  "u": "create(android.view.View)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "HeaderBinder",
+  "l": "create(View)",
+  "u": "create(android.view.View)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.hilt",
+  "c": "DatabaseModule",
+  "l": "DatabaseModule()",
+  "u": "%3Cinit%3E()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder",
+  "l": "DayBinder(Context)",
+  "u": "%3Cinit%3E(android.content.Context)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder.DayHolder",
+  "l": "DayHolder(View)",
+  "u": "%3Cinit%3E(android.view.View)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.dao",
+  "c": "ApodDao",
+  "l": "deleteAll()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.controller",
+  "c": "ListFragment.ListType",
+  "l": "FAVORITES"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "fetch(LocalDate, LocalDate)",
+  "u": "fetch(java.time.LocalDate,java.time.LocalDate)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "fetchApodsForDateAcrossYears(LocalDate)",
+  "u": "fetchApodsForDateAcrossYears(java.time.LocalDate)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "fetchApodsForDateAcrossYears(String)",
+  "u": "fetchApodsForDateAcrossYears(java.lang.String)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "fetchRandomApod()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "fetchRandomApod()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "get(LocalDate, LocalDate)",
+  "u": "get(java.time.LocalDate,java.time.LocalDate)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "get(long)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "LoginViewModel",
+  "l": "getAccount()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "getApod()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodDatabase",
+  "l": "getApodDao()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.adapter",
+  "c": "DayBinder",
+  "l": "getApodMap()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "getApodMap()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "getApods()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.entity",
+  "c": "Apod",
+  "l": "getCopyright()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.entity",
+  "c": "Apod",
+  "l": "getDate()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodProxyService",
+  "l": "getDateRange(LocalDate, LocalDate, String)",
+  "u": "getDateRange(java.time.LocalDate,java.time.LocalDate,java.lang.String)"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.entity",
+  "c": "Apod",
+  "l": "getDescription()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.dao",
+  "c": "ApodDao",
+  "l": "getFavorites()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.service",
+  "c": "ApodRepository",
+  "l": "getFavorites()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+  "c": "ApodViewModel",
+  "l": "getFavorites()"
+}, {
+  "p": "edu.cnm.deepdive.spaceseek.model.entity",
+  "c": "Apod",
+  "l": "getHighDefUrl()"
+},
+  {"p": "edu.cnm.deepdive.spaceseek.model.entity", "c": "Apod", "l": "getId()"},
+  {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "ListAdapter",
+    "l": "getItemCount()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "getLocation()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "getLowDefUrl()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "getMediaType()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase",
+    "l": "getName()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodProxyService",
+    "l": "getOpenDateRange(LocalDate, String)",
+    "u": "getOpenDateRange(java.time.LocalDate,java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "ApodViewModel",
+    "l": "getRandomApod()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodProxyService",
+    "l": "getRandomApod(String)",
+    "u": "getRandomApod(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodProxyService",
+    "l": "getRandomApods(int, String)",
+    "u": "getRandomApods(int,java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "getRefreshThrowable()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "AuthService",
+    "l": "getSignInClient()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "getSignInThrowable()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodProxyService",
+    "l": "getSpecificDateAcrossYears(LocalDate, LocalDate, String)",
+    "u": "getSpecificDateAcrossYears(java.time.LocalDate,java.time.LocalDate,java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "getTitle()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodProxyService",
+    "l": "getToday(String)",
+    "u": "getToday(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "ApodViewModel",
+    "l": "getYearMonth()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod.MediaType",
+    "l": "IMAGE"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ImageFragment",
+    "l": "ImageFragment()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "insert(Apod)",
+    "u": "insert(edu.cnm.deepdive.spaceseek.model.entity.Apod)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "insert(List<Apod>)",
+    "u": "insert(java.util.List)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "insertAndReturn(Apod)",
+    "u": "insertAndReturn(edu.cnm.deepdive.spaceseek.model.entity.Apod)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "integerToMediaType(Integer)",
+    "u": "integerToMediaType(java.lang.Integer)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod.MediaType",
+    "l": "isDownloadable()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "isFavorite()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.hilt",
+    "c": "LayoutInflaterModule",
+    "l": "LayoutInflaterModule()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "ListAdapter",
+    "l": "ListAdapter(Context, List<Apod>)",
+    "u": "%3Cinit%3E(android.content.Context,java.util.List)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment",
+    "l": "ListFragment()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "localDateToLong(LocalDate)",
+    "u": "localDateToLong(java.time.LocalDate)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "LoginFragment",
+    "l": "LoginFragment()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "LoginViewModel(Application, AuthService)",
+    "u": "%3Cinit%3E(android.app.Application,edu.cnm.deepdive.spaceseek.service.AuthService)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "longToLocalDate(Long)",
+    "u": "longToLocalDate(java.lang.Long)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "MainActivity()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "mediaTypeToInteger(Apod.MediaType)",
+    "u": "mediaTypeToInteger(edu.cnm.deepdive.spaceseek.model.entity.Apod.MediaType)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek",
+    "c": "NasaApodApplication",
+    "l": "NasaApodApplication()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek",
+    "c": "NavGraphDirections",
+    "l": "navigateToImageFragment()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek",
+    "c": "NavGraphDirections",
+    "l": "navigateToPreLoginFragment()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek",
+    "c": "NavGraphDirections",
+    "l": "navigateToSettingsFragment()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "DayBinder.OnApodClickListener",
+    "l": "onApodClick(Apod)",
+    "u": "onApodClick(edu.cnm.deepdive.spaceseek.model.entity.Apod)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "ListAdapter",
+    "l": "onBindViewHolder(RecyclerView.ViewHolder, int)",
+    "u": "onBindViewHolder(androidx.recyclerview.widget.RecyclerView.ViewHolder,int)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek",
+    "c": "NasaApodApplication",
+    "l": "onCreate()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment",
+    "l": "onCreate(Bundle)",
+    "u": "onCreate(android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "onCreate(Bundle)",
+    "u": "onCreate(android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "onCreateOptionsMenu(Menu)",
+    "u": "onCreateOptionsMenu(android.view.Menu)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "SettingsFragment",
+    "l": "onCreatePreferences(Bundle, String)",
+    "u": "onCreatePreferences(android.os.Bundle,java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "CalendarFragment",
+    "l": "onCreateView(LayoutInflater, ViewGroup, Bundle)",
+    "u": "onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ImageFragment",
+    "l": "onCreateView(LayoutInflater, ViewGroup, Bundle)",
+    "u": "onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment",
+    "l": "onCreateView(LayoutInflater, ViewGroup, Bundle)",
+    "u": "onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "LoginFragment",
+    "l": "onCreateView(LayoutInflater, ViewGroup, Bundle)",
+    "u": "onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "PreLoginFragment",
+    "l": "onCreateView(LayoutInflater, ViewGroup, Bundle)",
+    "u": "onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "ListAdapter",
+    "l": "onCreateViewHolder(ViewGroup, int)",
+    "u": "onCreateViewHolder(android.view.ViewGroup,int)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "CalendarFragment",
+    "l": "onDestroyView()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ImageFragment",
+    "l": "onDestroyView()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "LoginFragment",
+    "l": "onDestroyView()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "onOptionsItemSelected(MenuItem)",
+    "u": "onOptionsItemSelected(android.view.MenuItem)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "SettingsFragment",
+    "l": "onPause()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "onPrepareOptionsMenu(Menu)",
+    "u": "onPrepareOptionsMenu(android.view.Menu)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "SettingsFragment",
+    "l": "onResume()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "MainActivity",
+    "l": "onSupportNavigateUp()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "CalendarFragment",
+    "l": "onViewCreated(View, Bundle)",
+    "u": "onViewCreated(android.view.View,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ImageFragment",
+    "l": "onViewCreated(View, Bundle)",
+    "u": "onViewCreated(android.view.View,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment",
+    "l": "onViewCreated(View, Bundle)",
+    "u": "onViewCreated(android.view.View,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "LoginFragment",
+    "l": "onViewCreated(View, Bundle)",
+    "u": "onViewCreated(android.view.View,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "PreLoginFragment",
+    "l": "onViewCreated(View, Bundle)",
+    "u": "onViewCreated(android.view.View,android.os.Bundle)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.hilt",
+    "c": "PicassoModule",
+    "l": "PicassoModule()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "PreLoginFragment",
+    "l": "PreLoginFragment()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.hilt",
+    "c": "ProxyModule",
+    "l": "ProxyModule()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "refresh()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "select(LocalDate)",
+    "u": "select(java.time.LocalDate)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "select(long)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "selectOpenRange(LocalDate)",
+    "u": "selectOpenRange(java.time.LocalDate)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.dao",
+    "c": "ApodDao",
+    "l": "selectRange(LocalDate, LocalDate)",
+    "u": "selectRange(java.time.LocalDate,java.time.LocalDate)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "ApodViewModel",
+    "l": "setApodId(long)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setCopyright(String)",
+    "u": "setCopyright(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setDate(LocalDate)",
+    "u": "setDate(java.time.LocalDate)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setDescription(String)",
+    "u": "setDescription(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setFavorite(boolean)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setHighDefUrl(URL)",
+    "u": "setHighDefUrl(java.net.URL)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setId(long)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.adapter",
+    "c": "DayBinder",
+    "l": "setListener(DayBinder.OnApodClickListener)",
+    "u": "setListener(edu.cnm.deepdive.spaceseek.adapter.DayBinder.OnApodClickListener)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setLocation(String)",
+    "u": "setLocation(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setLowDefUrl(URL)",
+    "u": "setLowDefUrl(java.net.URL)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setMediaType(Apod.MediaType)",
+    "u": "setMediaType(edu.cnm.deepdive.spaceseek.model.entity.Apod.MediaType)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "SettingsFragment",
+    "l": "SettingsFragment()",
+    "u": "%3Cinit%3E()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod",
+    "l": "setTitle(String)",
+    "u": "setTitle(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "ApodViewModel",
+    "l": "setYearMonth(YearMonth)",
+    "u": "setYearMonth(java.time.YearMonth)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "AuthService",
+    "l": "signOut()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "signOut()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "AuthService",
+    "l": "silentSignIn()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "AuthService",
+    "l": "startSignIn(ActivityResultLauncher<Intent>)",
+    "u": "startSignIn(androidx.activity.result.ActivityResultLauncher)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.viewmodel",
+    "c": "LoginViewModel",
+    "l": "startSignIn(ActivityResultLauncher<Intent>)",
+    "u": "startSignIn(androidx.activity.result.ActivityResultLauncher)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "stringToUrl(String)",
+    "u": "stringToUrl(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.service",
+    "c": "ApodDatabase.Converters",
+    "l": "urlToString(URL)",
+    "u": "urlToString(java.net.URL)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment.ListType",
+    "l": "valueOf(String)",
+    "u": "valueOf(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod.MediaType",
+    "l": "valueOf(String)",
+    "u": "valueOf(java.lang.String)"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.controller",
+    "c": "ListFragment.ListType",
+    "l": "values()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod.MediaType",
+    "l": "values()"
+  }, {
+    "p": "edu.cnm.deepdive.spaceseek.model.entity",
+    "c": "Apod.MediaType",
+    "l": "VIDEO"
+  }];
+updateSearchResults();

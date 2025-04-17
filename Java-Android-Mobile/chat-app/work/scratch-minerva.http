@@ -1,0 +1,88 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+### Get user by key
+GET http://localhost:8090/chat/users/c3794200-e78f-4c09-8ea3-761e1c55652f
+Authorization: Bearer {{bearerToken}}
+
+### Update my profile
+PUT http://localhost:8090/chat/users/me
+Authorization: Bearer {{bearerToken}}
+Content-Type: application/json
+
+{
+  "displayName": "Minerva",
+  "avatar": "null"
+}
+
+### Retrieve my profile
+GET http://localhost:8090/chat/users/me
+Authorization: Bearer {{bearerToken}}
+
+### List all channels
+GET http://localhost:8090/chat/channels
+Authorization: Bearer {{bearerToken}}
+
+###  Modify active flag of specified channel
+PUT http://localhost:8090/chat/channels/c3794200-e78f-4c09-8ea3-761e1c55652f/active
+Authorization: Bearer {{bearerToken}}
+Content-Type: application/json
+
+
+###
+GET http://localhost:8090/chat/channels/c3794200-e78f-4c09-8ea3-761e1c55652f/active
+Authorization: Bearer {{bearerToken}}
+
+
+### Retrieve all my channels
+GET http://localhost:8090/chat/channels
+Authorization: Bearer {{bearerToken}}
+
+
+
+###
+GET http://localhost:8090/chat/channels/c3794200-e78f-4c09-8ea3-761e1c55652f/messages
+Authorization: Bearer {{bearerToken}}
+
+###
+POST http://localhost:8090/chat/channels
+Authorization: Bearer {{bearerToken}}
+Content-Type: application/json
+
+{
+  "name": "Sprinkle ham",
+  "active": true
+}
+
+### Add content to channel Trogdor
+POST http://localhost:8090/chat/channels/cf71fa43-2d17-426b-a6b0-e55206fa0304/messages
+Authorization: Bearer {{bearerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "text": "Trogdor was a man...well, he was a dragon... at least, he was a dragon-man"
+}
+
+
+### Retrieve messages since specified time
+GET http://localhost:8090/chat/channels/cf71fa43-2d17-426b-a6b0-e55206fa0304/messages?since=1741657757000
+Authorization: Bearer {{bearerToken}}
+
+
+###
+POST http://localhost:8090/chat/channels/{{channelKey}}/messages
+Authorization: Bearer {{bearerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "text": "Doll post-its target link."
+}
+
+### Retrieve messages since specified time
+GET http://localhost:8090/chat/channels/{{channelKey}}/messages?since=1742004750
+Authorization: Bearer {{bearerToken}}
+
+

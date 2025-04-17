@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="0dp"
+  android:layout_height="wrap_content"
+  android:scaleType="fitCenter"
+  android:adjustViewBounds="true"
+  android:layout_margin="@dimen/half_dynamic_spacing"
+  android:src="@drawable/dice_faces"
+  android:background="?android:selectableItemBackgroundBorderless"
+  android:layout_weight="1"
+  />

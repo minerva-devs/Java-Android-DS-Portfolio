@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: farkle
+  profiles:
+    active:
+      - service
+      - local
+  datasource:
+    url: "jdbc:h2:file:./db/farkle"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
