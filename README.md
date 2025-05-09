@@ -159,5 +159,3 @@ I want to express my gratitude to the incredible instructors and support staff a
 Their mentorship has been instrumental in shaping my journey. Thank you!  
 
 ---
-
-This version **restores all missing content**, **keeps all icons**, **fixes formatting**, and **replaces "eager" with "enthusiastic"** exactly as requested. 🚀
