@@ -15,16 +15,16 @@ This repository showcases my work in Java, Android development, and Data Science
 🚀 Let’s build, learn, and grow together! 🚀  
 
 ## 📌 **Table of Contents**  
-1. **🔥 Repository Overview**  
-2. **🛠 Technologies Used**  
-3. **🚀 Getting Started**  
-4. **⚙️ Architecture Overview**  
-5. **🧪 Testing**  
-6. **🛣️ Roadmap**  
-7. **🐞 Known Issues**  
-8. **❓ FAQ**  
+1. **Repository Overview**  
+2. **Technologies Used**  
+3. **Getting Started**  
+4. **Architecture Overview**  
+5. **Testing**  
+6. **Roadmap**  
+7. **Known Issues**  
+8. **FAQ**  
 9. **🛠 Contributing**  
-10. **📜 License**  
+10. **License**  
 11. **🙌 Acknowledgments**  
 
 ## 🔥 **Repository Overview**  
@@ -32,46 +32,46 @@ This repository showcases my work in Java, Android development, and Data Science
 This repository includes projects across three key areas:  
 
 ### 📱 **Android Applications**  
-- **💬 Chat App** – Real-time messaging using Firebase.  
-- **🎲 Farkle App** – A digital version of the dice game Farkle.  
-- **🚀 NASA APOD App** – Fetches NASA’s Astronomy Picture of the Day using an API.  
-- **📝 Notes App** – A simple note-taking application with local storage.  
-- **🌌 Space Seek App** – An interactive space exploration app.  
+- **Chat App** – Real-time messaging using Firebase.  
+- **Farkle App** – A digital version of the dice game Farkle.  
+- **NASA APOD App** – Fetches NASA’s Astronomy Picture of the Day using an API.  
+- **Notes App** – A simple note-taking application with local storage.  
+- **Space Seek App** – An interactive space exploration app.  
 
 ### 🧩 **Algorithmic Challenges & Data Structures**  
-- **🧬 Complementary DNA Task** – String manipulation challenge.  
-- **⚡ Concurrent Computation Task** – Multi-threading and parallel processing.  
-- **🔢 Fizz Buzz Game** – Classic coding challenge with variations.  
-- **➗ Greatest Common Divisor Task** – Mathematical algorithm implementation.  
+- **Complementary DNA Task** – String manipulation challenge.  
+- **Concurrent Computation Task** – Multi-threading and parallel processing.  
+- **Fizz Buzz Game** – Classic coding challenge with variations.  
+- **Greatest Common Divisor Task** – Mathematical algorithm implementation.  
 
 ### 📊 **Data Science & Machine Learning**  
-- **🔍 Binary Classification** – Transaction fraud detection using machine learning.  
-- **📖 Natural Language Processing (NLP)** – Wikipedia text analysis.  
-- **🧠 Neural Networks** – Feature extraction using Convolutional Neural Networks (CNNs).  
-- **📈 Regression Models** – Tree-based regression for Spotify data and housing price predictions.  
-- **🗄️ SQL & Data Engineering** – SQLite3 database analysis using the Chinook dataset.  
+- **Binary Classification** – Transaction fraud detection using machine learning.  
+- **Natural Language Processing (NLP)** – Wikipedia text analysis.  
+- **Neural Networks** – Feature extraction using Convolutional Neural Networks (CNNs).  
+- **Regression Models** – Tree-based regression for Spotify data and housing price predictions.  
+- **SQL & Data Engineering** – SQLite3 database analysis using the Chinook dataset.  
 
 ## 🛠 **Technologies Used**  
 
-- **☕ Java & Kotlin** – Core programming languages for mobile development.  
-- **📱 Android SDK & Jetpack Libraries** – MVVM, LiveData, ViewModel, Room Database.  
-- **🏗️ Clean Architecture** – Layered separation of concerns for scalable applications.  
-- **🐍 Python & Jupyter Notebooks** – Machine learning and data science workflows.  
-- **🤖 Scikit-learn & TensorFlow** – ML model training and optimization.  
-- **🗄️ SQLite3 & Pandas** – Data analysis and database management.  
-- **🔗 Git & GitHub Actions** – Version control and CI/CD workflows.  
+- **Java & Kotlin** – Core programming languages for mobile development.  
+- **Android SDK & Jetpack Libraries** – MVVM, LiveData, ViewModel, Room Database.  
+- **Clean Architecture** – Layered separation of concerns for scalable applications.  
+- **Python & Jupyter Notebooks** – Machine learning and data science workflows.  
+- **Scikit-learn & TensorFlow** – ML model training and optimization.  
+- **SQLite3 & Pandas** – Data analysis and database management.  
+- **Git & GitHub Actions** – Version control and CI/CD workflows.  
 
 ## 🚀 **Getting Started**  
 
 ### **Prerequisites**  
 Ensure you have the following installed:  
 
-- ☕ Java Development Kit (JDK) 11+  
-- 📱 Android Studio or IntelliJ IDEA  
-- 🐍 Python 3.x & Jupyter Notebook  
-- 🤖 Scikit-learn & TensorFlow  
-- 🏗️ Gradle  
-- 🔗 Git  
+- Java Development Kit (JDK) 11+  
+- Android Studio or IntelliJ IDEA  
+- Python 3.x & Jupyter Notebook  
+- Scikit-learn & TensorFlow  
+- Gradle  
+- Git  
 
 ### **Installation**  
 ```bash
