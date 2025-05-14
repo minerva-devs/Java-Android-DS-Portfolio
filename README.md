@@ -23,7 +23,7 @@ This repository showcases my work in Java, Android development, and Data Science
 6. **Roadmap**  
 7. **Known Issues**  
 8. **FAQ**  
-9. **🛠 Contributing**  
+9. **Contributing**  
 10. **License**  
 11. **🙌 Acknowledgments**  
 
