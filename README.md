@@ -118,15 +118,15 @@ jupyter notebook  # Open notebooks for interactive analysis
 
 ## 🛣️ **Roadmap**  
 Planned improvements:  
-- 🎨 Enhance UI for ongoing Android projects.  
-- 🏗️ Add more advanced data structures and ML models.  
-- ⚡ Optimize algorithm implementations for better performance.  
-- 🚀 Launch an Android app on the Google Play Store.  
+- Enhance UI for ongoing Android projects.  
+- Add more advanced data structures and ML models.  
+- Optimize algorithm implementations for better performance.  
+- Launch an Android app on the Google Play Store.  
 
 ## 🐞 **Known Issues**  
-- 🖼️ Some Android apps have incomplete UI elements.  
-- ⚡ Certain Java implementations may need performance optimizations.  
-- 🤖 Some ML models require further tuning for better accuracy.  
+- Some Android apps have incomplete UI elements.  
+- Certain Java implementations may need performance optimizations.  
+- Some ML models require further tuning for better accuracy.  
 
 ## ❓ **FAQ**  
 **Q: Can I contribute?**  
