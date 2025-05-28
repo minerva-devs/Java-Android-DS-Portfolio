@@ -4,9 +4,9 @@
 
 Hi there! 👋 Welcome to my GitHub portfolio!  
 
-With 15 years of data analysis experience and a year of immersive coding bootcamps, I have transitioned into software development and data science, specializing in mobile applications, machine learning, and algorithm optimization.  
+With 15 years of data analysis experience and a year of immersive coding bootcamps, I have transitioned into software development and data science, focusing on mobile applications, machine learning, and algorithm optimization.  
 
-This repository showcases my work in Java, Android development, and Data Science, following best practices like Clean Architecture and Google’s modern MVVM approach for scalable applications. I am enthusiastic about collaborating with other developers and data scientists to learn, build, and grow together.  
+This repository showcases my work in Java programming, Android development, and Data Science, following best practices like Clean Architecture and Google’s modern MVVM approach for scalable applications. I am enthusiastic about collaborating with other developers and data scientists to learn, build, and grow together.  
 
 ## 🤝 **Let’s Connect!**  
 📧 **Email:** minefq@yahoo.com  
