@@ -10,7 +10,8 @@ This repository showcases my work in Java programming, Android development, and 
 
 ## 🤝 **Let’s Connect!**  
 📧 **Email:** minefq@yahoo.com  
-💬 **GitHub Issues** – Open a discussion!  
+🔗 **LinkedIn:** [www.linkedin.com/in/minervacfranco](https://www.linkedin.com/in/minervacfranco)  
+🛠️ **GitHub Issues** – [Open a discussion!](https://github.com/minerva-devs/Java-Android-DataScience-Portfolio/issues)  
 
 🚀 Let’s build, learn, and grow together! 🚀  
 
