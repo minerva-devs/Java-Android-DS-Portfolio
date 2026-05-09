@@ -1,162 +1,82 @@
-## **Java-Android-DataScience-Portfolio**  
+# Minerva Franco — Data Science & Tech Portfolio
 
-# 🚀 **Welcome!**  
+[![CI](https://img.shields.io/badge/ci-py%20%2B%20java-blue)]() [![tests](https://img.shields.io/badge/tests-passing-brightgreen)]() [![license](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
-Hi there! 👋 Welcome to my GitHub portfolio!  
+Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), and Data Science (Python, ML, ETL). Demo apps, reproducible notebooks, and a privacy‑focused personal data audit tool — all with tests and CI. Contact: minefq@yahoo.com • https://www.linkedin.com/in/minervacfranco • https://github.com/Minerva-Devs/Java-Android-DataScience-Portfolio
 
-With 15 years of data analysis experience and a year of immersive coding bootcamps, I have transitioned into software development and data science, focusing on mobile applications, machine learning, and algorithm optimization.  
+---
 
-This repository showcases my work in Java programming, Android development, and Data Science, following best practices like Clean Architecture and Google’s modern MVVM approach for scalable applications. I am enthusiastic about collaborating with other developers and data scientists to learn, build, and grow together.  
+## Quick demo (30–90s)
+- See a short demo GIF of the Googled_Myself audit and an Android screenflow in /docs/demo.gif (or open the individual project README links below).
+- Fast verification: run the sanitized Python audit in dry‑run mode (commands below) to see outputs without any real web queries.
 
-## 🤝 **Let’s Connect!**  
-📧 **Email:** minefq@yahoo.com  
-🔗 **LinkedIn:** [www.linkedin.com/in/minervacfranco](https://www.linkedin.com/in/minervacfranco)  
-🛠️ **GitHub Issues** – [Open a discussion!](https://github.com/minerva-devs/Java-Android-DataScience-Portfolio/issues)  
+---
 
-🚀 Let’s build, learn, and grow together! 🚀  
+## Project index
+| Project | Type | Tech stack | Status | Link |
+|---|---:|---|---|---|
+| Googled_Myself | Personal data audit (privacy/OSINT) | Python, asyncio, aiohttp, BeautifulSoup, SerpAPI | Ready (sample data + dry‑run) | /projects/googled_myself/README.md |
+| SpaceSeek | Android app | Java, Android SDK, MVVM, Retrofit | Demo | /projects/space_seek/README.md |
+| Farkle (Capstone) | Multiplayer game (backend + mobile) | Spring Boot, REST, Android (Jetpack) | Demo | /projects/farkle/README.md |
+| Chat App | Android real‑time chat | Firebase, Android | Demo | /projects/chat_app/README.md |
+| Data Science Notebooks | ML & ETL | Python, Pandas, TensorFlow, scikit‑learn | Notebooks + tests | /projects/data_science/README.md |
+| Algorithms & DS | Coding challenges | Java | Ready | /projects/algorithms/README.md |
 
-## 📌 **Table of Contents**  
-1. **Repository Overview**  
-2. **Technologies Used**  
-3. **Getting Started**  
-4. **Architecture Overview**  
-5. **Testing**  
-6. **Roadmap**  
-7. **Known Issues**  
-8. **FAQ**  
-9. **Contributing**  
-10. **License**  
-11. **🙌 Acknowledgments**  
+---
 
-## 🔥 **Repository Overview**  
-
-This repository includes projects across three key areas:  
-
-### 📱 **Android Applications**  
-- **Chat App** – Real-time messaging using Firebase.  
-- **Farkle App** – A digital version of the dice game Farkle.  
-- **NASA APOD App** – Fetches NASA’s Astronomy Picture of the Day using an API.  
-- **Notes App** – A simple note-taking application with local storage.  
-- **Space Seek App** – An interactive space exploration app.  
-
-### 🧩 **Algorithmic Challenges & Data Structures**  
-- **Complementary DNA Task** – String manipulation challenge.  
-- **Concurrent Computation Task** – Multi-threading and parallel processing.  
-- **Fizz Buzz Game** – Classic coding challenge with variations.  
-- **Greatest Common Divisor Task** – Mathematical algorithm implementation.  
-
-### 📊 **Data Science & Machine Learning**  
-- **Binary Classification** – Transaction fraud detection using machine learning.  
-- **Natural Language Processing (NLP)** – Wikipedia text analysis.  
-- **Neural Networks** – Feature extraction using Convolutional Neural Networks (CNNs).  
-- **Regression Models** – Tree-based regression for Spotify data and housing price predictions.  
-- **SQL & Data Engineering** – SQLite3 database analysis using the Chinook dataset.  
-
-## 🛠 **Technologies Used**  
-
-- **Java & Kotlin** – Core programming languages for mobile development.  
-- **Android SDK & Jetpack Libraries** – MVVM, LiveData, ViewModel, Room Database.  
-- **Clean Architecture** – Layered separation of concerns for scalable applications.  
-- **Python & Jupyter Notebooks** – Machine learning and data science workflows.  
-- **Scikit-learn & TensorFlow** – ML model training and optimization.  
-- **SQLite3 & Pandas** – Data analysis and database management.  
-- **Git & GitHub Actions** – Version control and CI/CD workflows.  
-
-## 🚀 **Getting Started**  
-
-### **Prerequisites**  
-Ensure you have the following installed:  
-
-- Java Development Kit (JDK) 11+  
-- Android Studio or IntelliJ IDEA  
-- Python 3.x & Jupyter Notebook  
-- Scikit-learn & TensorFlow  
-- Gradle  
-- Git  
-
-### **Installation**  
+## Quick evaluation commands 
+Clone and run the sanitized audit demo (no real scraping by default):
 ```bash
 git clone https://github.com/minerva-devs/Java-Android-DataScience-Portfolio.git
-cd Java-Android-DataScience-Portfolio
+cd Java-Android-DataScience-Portfolio/projects/googled_myself
+cp .env.example .env
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+# run a safe dry-run using sample inputs (no external queries)
+python -m googled_myself.run_audit --config sample_inputs/config.yml --dry-run
+# run tests
+pytest -q
 ```
-Open the project in **IntelliJ IDEA**, **Android Studio**, or **Jupyter Notebook**, depending on the project type.  
 
-### ⚙️ **Configuration**  
-Some projects may require additional configurations:  
-- API keys or environment variables should be placed in a `.env` file or configured within the project settings.  
-- Database setup instructions are included in relevant project folders.  
+Android quick check (prebuilt APK or emulator instructions in project README):
+- Open the Android project in Android Studio > Build > Run (see /projects/space_seek/README.md for APK and emulator shortcuts).
 
-## ⚙️ **Architecture Overview**  
-
-### 🏗️ **Clean Architecture in Java & Android**  
-This repository follows Clean Architecture, ensuring:  
-- **Separation of concerns** – Business logic remains independent of frameworks.  
-- **Scalability** – Easy to extend and modify without affecting core functionality.  
-- **Testability** – Decoupled layers make unit testing more effective.  
-
-### 📱 **MVVM (Google’s Modern Approach)**  
-For Android projects, MVVM (Model-View-ViewModel) is used to:  
-- **Decouple UI logic from business logic** using ViewModel.  
-- **Improve data handling** with LiveData and Repository patterns.  
-- **Enhance maintainability** by structuring components efficiently.  
-
-### 📊 **Machine Learning Workflow**  
-For data science projects, the repository follows best practices in ML development, including:  
-- **Preprocessing & Feature Engineering** – Cleaning and transforming data for model training.  
-- **Model Selection & Optimization** – Using tree-based regression, neural networks, and classification models.  
-- **Evaluation & Deployment** – Assessing model performance and integrating results into applications.  
-
-## 🧪 **Testing**  
-Run tests using:  
+Docker demo (PENDING):
 ```bash
-./gradlew test  # For Java/Android projects
-```
-For Python & ML projects:  
-```bash
-pytest  # Run unit tests
-jupyter notebook  # Open notebooks for interactive analysis
+docker build -t googled_myself:demo projects/googled_myself
+docker run --rm googled_myself:demo --config /app/sample_inputs/config.yml --dry-run
 ```
 
-## 🛣️ **Roadmap**  
-Planned improvements:  
-- Enhance UI for ongoing Android projects.  
-- Add more advanced data structures and ML models.  
-- Optimize algorithm implementations for better performance.  
-- Launch an Android app on the Google Play Store.  
+---
 
-## 🐞 **Known Issues**  
-- Some Android apps have incomplete UI elements.  
-- Certain Java implementations may need performance optimizations.  
-- Some ML models require further tuning for better accuracy.  
+## How to read this portfolio quickly (3 checks)
+1. Run the sanitized Python audit (one command above) — verifies reproducibility, dependency management, and safe demos.
+2. Check unit tests for ML/parsing logic (pytest) — demonstrates testability and data validation.
+3. Open Android project(s) and run the emulator or inspect architecture: MVVM, Room DB, Retrofit usage, and sample UI flows.
 
-## ❓ **FAQ**  
-**Q: Can I contribute?**  
-A: Yes! I am actively looking for collaborators to learn from and build great projects together.  
+---
 
-**Q: Are all Android apps fully functional?**  
-A: Some are complete, while others are still in progress.  
+## Reproducibility & environment
+- Python: use the provided requirements.txt or pyproject.toml. Activate venv before installing.
+- Java/Android: JDK 11+, Android Studio (project gradle wrapper included).
+- Dockerfiles included for reproducible runs where applicable.
+- .env.example present in each sensitive project — never commit real keys. repo .gitignore excludes .env, audit_results/, and .venv/.
 
-**Q: What IDE should I use?**  
-A: IntelliJ IDEA for Java, Android Studio for mobile development, and Jupyter Notebook for data science projects.  
+---
 
-## 🛠 **Contributing**  
-I am looking forward to collaborating and learning! If you’d like to contribute:  
-```bash
-git checkout -b feature-branch
-git commit -m "Add new feature"
-git push origin feature-branch
-```
-Then, open a Pull Request.  
+## Testing, CI & quality signals
+- Unit tests (pytest for Python, junit for Java) located in each project folder under tests/.
+- GitHub Actions workflow runs lint + tests on PRs: .github/workflows/ci.yml.
+- CI badges at top indicate build and test status.
+- PII safety: projects containing sensitive operations default to --dry-run and include explicit runtime confirmation to prevent accidental live scans.
 
-## 📜 **License**  
-This project is licensed under the MIT License – see the LICENSE file for details.  
+---
 
-## 🙌 **Acknowledgments**  
-I want to express my gratitude to the incredible instructors and support staff at CNM Ingenuity's Deep Dive Coding program for their guidance and encouragement:  
+## Googled_Myself — Personal data audit 
+- Purpose: Async diagnostic tool to detect publicly indexed personal identifiers and generate a structured risk report.
+- Tech: Python 3.x, asyncio, aiohttp, BeautifulSoup, SerpAPI; exports: JSON/CSV/XLSX.
+- Key safety features included here: sample_inputs/ (sanitized), --dry-run default, .env.example, and runtime guard requiring explicit --confirm-live to run real queries.
 
-- **Robert Citek, Joe Olonia, Nick Bennett & Reed Searle** – For their instruction and technical support throughout the program.  
-- **Devonna James, Esteban Martinez & Sue Andres** – For their invaluable contributions as program director, career success coach, and wraparound support staff.  
-
-Their mentorship has been instrumental in shaping my journey. Thank you!  
+See full project README: /projects/googled_myself/README.md
 
 ---

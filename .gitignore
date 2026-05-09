@@ -1,1 +1,9 @@
-*notes.md
+```
+# googled_myself
+/projects/googled_myself/.env
+/projects/googled_myself/audit_results/
+projects/googled_myself/*.pyc
+.venv/
+notes.md
+
+```

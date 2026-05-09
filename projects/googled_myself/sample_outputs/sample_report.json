@@ -1,0 +1,11 @@
+[
+  {
+    "url": "file://sample_1.html",
+    "matches": [
+      {"type": "name", "value": "Alex Example"},
+      {"type": "email", "value": "alex.example@examplemail.com"},
+      {"type": "phone", "value": "555-0123"}
+    ],
+    "risk_score": 140
+  }
+]

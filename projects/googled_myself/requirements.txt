@@ -1,0 +1,8 @@
+aiohttp
+beautifulsoup4
+openpyxl
+pandas
+python-dotenv
+pyyaml
+pytest
+requests

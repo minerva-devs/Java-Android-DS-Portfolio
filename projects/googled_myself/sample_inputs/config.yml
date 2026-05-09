@@ -1,0 +1,13 @@
+# Sanitized demo configuration for Googled_Myself
+queries:
+  - "Alex Example"
+  - "alex.example@examplemail.com"
+  - "555-0123"
+
+weights:
+  email: 50
+  phone: 70
+  name: 20
+
+# Optional: if set here, used as fallback when SERPAPI_KEY is not in env
+# serpapi_key: null
