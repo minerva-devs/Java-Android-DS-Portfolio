@@ -6,5 +6,7 @@ projects/googled_myself/*.pyc
 .venv/
 notes.md
 *.code-workspace
+Data-Science/
+Java-Android-Mobile/
 
 ```
