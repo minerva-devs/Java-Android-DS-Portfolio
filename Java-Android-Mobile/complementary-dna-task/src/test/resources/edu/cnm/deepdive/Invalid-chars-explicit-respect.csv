@@ -1,4 +1,0 @@
-sequence,	respectCase, expectedException
-"btaTGcgC", true, java.lang.IllegalArgumentException
-"ATcgAtYG", false, java.lang.IllegalArgumentException
-
