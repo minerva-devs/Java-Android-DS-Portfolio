@@ -1,10 +1,10 @@
 # Minerva Franco — Data Science & Tech Portfolio
 
-#UNDER CONSTRUCTION#
+## UNDER CONSTRUCTION ##
 
 [![CI](https://img.shields.io/badge/ci-py%20%2B%20java-blue)]() [![tests](https://img.shields.io/badge/tests-passing-brightgreen)]() [![license](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
-Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), and Data Science (Python, ML, ETL). Demo apps, reproducible notebooks, and a privacy‑focused personal data audit tool — all with tests and CI. Contact: minefq@yahoo.com • https://www.linkedin.com/in/minervacfranco • https://github.com/Minerva-Devs/Java-Android-DataScience-Portfolio
+Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), and Data Science (Python, ML, ETL). Demo apps, reproducible notebooks, and a privacy‑focused personal data audit tool - all with tests and CI. Contact: minefq@yahoo.com • https://www.linkedin.com/in/minervacfranco • https://github.com/Minerva-Devs/Java-Android-DataScience-Portfolio
 
 ---
 
