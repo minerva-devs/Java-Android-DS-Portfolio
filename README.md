@@ -1,162 +1,105 @@
-## **Java-Android-DataScience-Portfolio**  
+<h1>Tech Portfolio</h1>
+<h3>Java • Android • Data Science • Machine Learning • Systems</h3>
 
-# **Welcome!**  
+<p>This repository consolidates my work across software engineering, Android development, data science, machine learning, and systems‑level analysis. It includes production‑style Android applications, Java algorithmic implementations, machine‑learning workflows, and a standalone data‑audit pipeline. The projects reflect applied problem solving across mobile, analytical, and systems domains.</p>
 
-Hi there! Welcome to my GitHub portfolio!  
+<hr>
 
-With 15 years of data analysis experience and a year of immersive coding bootcamps, I have transitioned into software development and data science, focusing on mobile applications, machine learning, and algorithm optimization.  
+<h2>Repository Structure</h2>
 
-This repository showcases my work in Java programming, Android development, and Data Science, following best practices like Clean Architecture and Google’s modern MVVM approach for scalable applications. I am enthusiastic about collaborating with other developers and data scientists to learn, build, and grow together.  
+<h3>1. Data Science & Machine Learning 2024</h3>
+<p>Python-based machine learning and analytical workflows, TensorFlow, and scikit‑learn.</p>
 
-## **Let’s Connect!**  
-**Email:** minefq@yahoo.com  
-**LinkedIn:** [www.linkedin.com/in/minervacfranco](https://www.linkedin.com/in/minervacfranco)  
-**GitHub Issues** – [Open a discussion!](https://github.com/minerva-devs/Java-Android-DataScience-Portfolio/issues)  
+<ul>
+  <li><strong>Binary Classification</strong> – Fraud detection</li>
+  <li><strong>CNN Feature Extraction</strong> – Image‑based modeling</li>
+  <li><strong>NLP</strong> – Wikipedia text analysis</li>
+  <li><strong>Tree‑Based Regression</strong> – Spotify + housing datasets</li>
+  <li><strong>SQL & Data Engineering</strong> – SQLite3 (Chinook) analysis</li>
+  <li><strong>Time Series & Simulation Workflows</strong></li>
+</ul>
 
-Let’s build, learn, and grow together!
+<h3>2. Java and Android Applications 2025</h3>
+<p>Java mobile projects using MVVM, Clean Architecture, REST APIs, and modern Jetpack libraries.</p>
 
-## **Table of Contents**  
-1. **Repository Overview**  
-2. **Technologies Used**  
-3. **Getting Started**  
-4. **Architecture Overview**  
-5. **Testing**  
-6. **Roadmap**  
-7. **Known Issues**  
-8. **FAQ**  
-9. **Contributing**  
-10. **License**  
-11. **Acknowledgments**  
+<ul>
+  <li><strong>Chat App</strong> – Real‑time messaging (Firebase)</li>
+  <li><strong>NASA APOD App</strong> – API‑driven image retrieval</li>
+  <li><strong>Space Seek App</strong> – Interactive space exploration</li>
+  <li><strong>Notes App</strong> – Local storage with MVVM</li>
+  <li><strong>Farkle App</strong> – Dice game implementation</li>
+  <li><strong>Algorithmic Tasks</strong> – GCD, DNA complement, concurrency, FizzBuzz, etc.</li>
+</ul>
 
-## **Repository Overview**  
+<h3>3. Googled Myself — Data Audit and ML Pipeline 2026</h3>
+<p>Modular Python project for automated personal‑data auditing and structured analysis.</p>
 
-This repository includes projects across three key areas:  
+<ul>
+  <li><code>main_advanced.py</code> – core pipeline</li>
+  <li><code>.env.example</code> – environment configuration</li>
+  <li><code>run_audit.bat</code> – batch automation</li>
+  <li><code>REFERENCES.md</code> – supporting documentation</li>
+  <li>Designed for reproducibility, modularity, and auditability</li>
+</ul>
 
-### **Android Applications**  
-- **Chat App** – Real-time messaging using Firebase.  
-- **Farkle App** – A digital version of the dice game Farkle.  
-- **NASA APOD App** – Fetches NASA’s Astronomy Picture of the Day using an API.  
-- **Notes App** – A simple note-taking application with local storage.  
-- **Space Seek App** – An interactive space exploration app.  
+<p><strong>Folder:</strong> <code>googled_myself/</code></p>
 
-### **Algorithmic Challenges & Data Structures**  
-- **Complementary DNA Task** – String manipulation challenge.  
-- **Concurrent Computation Task** – Multi-threading and parallel processing.  
-- **Fizz Buzz Game** – Classic coding challenge with variations.  
-- **Greatest Common Divisor Task** – Mathematical algorithm implementation.  
+<hr>
 
-### **Data Science & Machine Learning**  
-- **Binary Classification** – Transaction fraud detection using machine learning.  
-- **Natural Language Processing (NLP)** – Wikipedia text analysis.  
-- **Neural Networks** – Feature extraction using Convolutional Neural Networks (CNNs).  
-- **Regression Models** – Tree-based regression for Spotify data and housing price predictions.  
-- **SQL & Data Engineering** – SQLite3 database analysis using the Chinook dataset.  
+<h2>Technologies</h2>
 
-## **Technologies Used**  
+<ul>
+  <li>Java, Kotlin, Android SDK, Jetpack, MVVM, Clean Architecture</li>
+  <li>Python, Jupyter, Pandas, NumPy, scikit‑learn, TensorFlow</li>
+  <li>SQLite3, SQL, REST APIs, JSON, cloud environments</li>
+  <li>Git, GitHub Actions, CI/CD, containerized workflows</li>
+</ul>
 
-- **Java & Kotlin** – Core programming languages for mobile development.  
-- **Android SDK & Jetpack Libraries** – MVVM, LiveData, ViewModel, Room Database.  
-- **Clean Architecture** – Layered separation of concerns for scalable applications.  
-- **Python & Jupyter Notebooks** – Machine learning and data science workflows.  
-- **Scikit-learn & TensorFlow** – ML model training and optimization.  
-- **SQLite3 & Pandas** – Data analysis and database management.  
-- **Git & GitHub Actions** – Version control and CI/CD workflows.  
+<hr>
 
-## **Getting Started**  
 
-### **Prerequisites**  
-Ensure you have the following installed:  
+<h2>Getting Started</h2>
 
-- Java Development Kit (JDK) 11+  
-- Android Studio or IntelliJ IDEA  
-- Python 3.x & Jupyter Notebook  
-- Scikit-learn & TensorFlow  
-- Gradle  
-- Git  
-
-### **Installation**  
 ```bash
-git clone https://github.com/minerva-devs/Java-Android-DataScience-Portfolio.git
-cd Java-Android-DataScience-Portfolio
-```
-Open the project in **IntelliJ IDEA**, **Android Studio**, or **Jupyter Notebook**, depending on the project type.  
-
-### **Configuration**  
-Some projects may require additional configurations:  
-- API keys or environment variables should be placed in a `.env` file or configured within the project settings.  
-- Database setup instructions are included in relevant project folders.  
-
-## **Architecture Overview**  
-
-### **Clean Architecture in Java & Android**  
-This repository follows Clean Architecture, ensuring:  
-- **Separation of concerns** – Business logic remains independent of frameworks.  
-- **Scalability** – Easy to extend and modify without affecting core functionality.  
-- **Testability** – Decoupled layers make unit testing more effective.  
-
-### **MVVM (Google’s Modern Approach)**  
-For Android projects, MVVM (Model-View-ViewModel) is used to:  
-- **Decouple UI logic from business logic** using ViewModel.  
-- **Improve data handling** with LiveData and Repository patterns.  
-- **Enhance maintainability** by structuring components efficiently.  
-
-### **Machine Learning Workflow**  
-For data science projects, the repository follows best practices in ML development, including:  
-- **Preprocessing & Feature Engineering** – Cleaning and transforming data for model training.  
-- **Model Selection & Optimization** – Using tree-based regression, neural networks, and classification models.  
-- **Evaluation & Deployment** – Assessing model performance and integrating results into applications.  
-
-## **Testing**  
-Run tests using:  
-```bash
-./gradlew test  # For Java/Android projects
-```
-For Python & ML projects:  
-```bash
-pytest  # Run unit tests
-jupyter notebook  # Open notebooks for interactive analysis
+git clone https://github.com/minerva-devs/tech-portfolio.git
+cd tech-portfolio
 ```
 
-## **Roadmap**  
-Planned improvements:  
-- Enhance UI for ongoing Android projects.  
-- Add more advanced data structures and ML models.  
-- Optimize algorithm implementations for better performance.  
-- Launch an Android app on the Google Play Store.  
+<p>Open the appropriate folder in Android Studio, IntelliJ, or Jupyter Notebook.</p>
 
-## **Known Issues**  
-- Some Android apps have incomplete UI elements.  
-- Certain Java implementations may need performance optimizations.  
-- Some ML models require further tuning for better accuracy.  
+<hr>
 
-## **FAQ**  
-**Q: Can I contribute?**  
-A: Yes! I am actively looking for collaborators to learn from and build great projects together.  
+<h2>Roadmap</h2>
 
-**Q: Are all Android apps fully functional?**  
-A: Some are complete, while others are still in progress.  
+<ul>
+  <li>Expand ML pipelines</li>
+  <li>Add advanced Android UI/UX</li>
+  <li>Integrate cloud‑based deployments</li>
+  <li>Add Dockerized workflows</li>
+  <li>Publish an Android app to Google Play</li>
+</ul>
 
-**Q: What IDE should I use?**  
-A: IntelliJ IDEA for Java, Android Studio for mobile development, and Jupyter Notebook for data science projects.  
+<hr>
 
-## **Contributing**  
-I am looking forward to collaborating and learning! If you’d like to contribute:  
+<h2>Contributing</h2>
+
+<p>Contributions welcome.</p>
+
 ```bash
 git checkout -b feature-branch
 git commit -m "Add new feature"
 git push origin feature-branch
 ```
-Then, open a Pull Request.  
 
-## **License**  
-This project is licensed under the MIT License – see the LICENSE file for details.  
+<hr>
 
-## **Acknowledgments**  
-I want to express my gratitude to the incredible instructors and support staff at CNM Ingenuity's Deep Dive Coding program for their guidance and encouragement:  
+<h2>Contact</h2>
 
-- **Robert Citek, Joe Olonia, Nick Bennett & Reed Searle** – For their instruction and technical support throughout the program.  
-- **Devonna James, Esteban Martinez & Sue Andres** – For their invaluable contributions as program director, career success coach, and wraparound support staff.  
+<ul>
+  <li><strong>Email:</strong> minefq@yahoo.com</li>
+  <strong>LinkedIn:</strong> https://www.linkedin.com/in/minervacfranco
+  <li><strong>GitHub Issues:</strong> Open a discussion anytime</li>
+</ul>
 
-Their mentorship has been instrumental in shaping my journey. Thank you!  
 
 ---
