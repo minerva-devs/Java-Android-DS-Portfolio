@@ -1,0 +1,20 @@
+# Python environment
+venv/
+pyvenv.cfg
+
+# IDE settings
+.vscode/
+
+# Security (Crucial!)
+.env
+
+# Archive & Data
+archive/
+*.csv
+*.json
+*.xlsx
+
+# Byte-compiled / optimized / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
