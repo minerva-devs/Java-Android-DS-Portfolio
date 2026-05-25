@@ -82,7 +82,6 @@ cd tech-portfolio
 <hr>
 
 <h2>Contributing</h2>
-
 <p>Contributions welcome.</p>
 
 ```bash
@@ -90,16 +89,13 @@ git checkout -b feature-branch
 git commit -m "Add new feature"
 git push origin feature-branch
 ```
-
 <hr>
 
 <h2>Contact</h2>
 
 <ul>
   <li><strong>Email:</strong> minefq@yahoo.com</li>
-  <strong>LinkedIn:</strong> https://www.linkedin.com/in/minervacfranco
-  <li><strong>GitHub Issues:</strong> Open a discussion anytime</li>
+  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/minervacfranco">https://www.linkedin.com/in/minervacfranco</a></li>
+  <li><strong>GitHub Issues:</strong> Open a discussion anytime <a href="https://github.com/minerva-devs/tech-portfolio/issues"><img src="https://img.shields.io/github/issues/minerva-devs/tech-portfolio" alt="GitHub issues"></a></li>
 </ul>
-
-
 ---
