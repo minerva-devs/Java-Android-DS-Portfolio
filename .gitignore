@@ -1,12 +1,16 @@
-```
 # googled_myself
 /projects/googled_myself/.env
 /projects/googled_myself/audit_results/
 projects/googled_myself/*.pyc
+
+# Python environment
 .venv/
+
+# Local-only work files
 notes.md
 *.code-workspace
+local-only/
+
+# Ignore these ONLY on this branch
 Data-Science/
 Java-Android-Mobile/
-
-```
