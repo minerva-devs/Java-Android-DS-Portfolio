@@ -1,10 +1,16 @@
-# Minerva Franco — Data Science & Tech Portfolio
+# Minerva Franco — Data Science, Systems & Tech Portfolio
 
 ## UNDER CONSTRUCTION ##
 
-[![CI](https://img.shields.io/badge/ci-py%20%2B%20java-blue)]() [![tests](https://img.shields.io/badge/tests-passing-brightgreen)]() [![license](https://img.shields.io/badge/license-MIT-lightgrey)]()
+[![CI](https://img.shields.io/badge/ci-py%20%2B%20java%20%2B%20ts-blue)]() [![tests](https://img.shields.io/badge/tests-passing-brightgreen)]() [![license](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
-Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), and Data Science (Python, ML, ETL). Demo apps, reproducible notebooks, and a privacy‑focused personal data audit tool - all with tests and CI. Contact: minefq@yahoo.com • https://www.linkedin.com/in/minervacfranco • https://github.com/Minerva-Devs/Java-Android-DataScience-Portfolio
+Co-founder and systems engineer specializing in production-ready software architectures, applied data science workflows, and deterministic AI memory infrastructure. This portfolio consolidates my work across:
+
+* **Startup Infrastructure:** Multi-workspace core engine services and deterministic AI memory layers.
+* **Mobile & Backend:** Clean Architecture Android applications (Java/Kotlin) paired with Spring Boot backends.
+* **Applied Data Science:** Privacy-preserving OSINT data auditing tools, reproducible pipelines, and targeted ML workflows.
+
+**Contact & Profiles:** 📩 minefq@yahoo.com • 💼 [LinkedIn](https://www.linkedin.com/in/minervacfranco) • 💻 [GitHub Portfolio](https://github.com/Minerva-Devs/tech-portfolio)
 
 ---
 
@@ -18,6 +24,7 @@ Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), a
 | Project | Type | Tech stack | Status | Link |
 |---|---:|---|---|---|
 | Googled_Myself | Personal data audit (privacy/OSINT) | Python, asyncio, aiohttp, BeautifulSoup, SerpAPI | Ready (sample data + dry‑run) | /projects/googled_myself/README.md |
+| Anchor Engine Node | Startup Infrastructure / AI Memory | TypeScript, Node.js, pnpm Workspaces, ts-node | Production Ready (v5.2.0) | /engine/README.md |
 | SpaceSeek | Android app | Java, Android SDK, MVVM, Retrofit | Demo | /projects/space_seek/README.md |
 | Farkle (Capstone) | Multiplayer game (backend + mobile) | Spring Boot, REST, Android (Jetpack) | Demo | /projects/farkle/README.md |
 | Chat App | Android real‑time chat | Firebase, Android | Demo | /projects/chat_app/README.md |
@@ -29,8 +36,8 @@ Full‑stack portfolio combining Android (Java/Kotlin), backend (Spring Boot), a
 ## Quick evaluation commands 
 Clone and run the sanitized audit demo (no real scraping by default):
 ```bash
-git clone https://github.com/minerva-devs/Java-Android-DataScience-Portfolio.git
-cd Java-Android-DataScience-Portfolio/projects/googled_myself
+git clone https://github.com/minerva-devs/tech-portfolio.git
+cd tech-portfolio/projects/googled_myself
 cp .env.example .env
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -38,6 +45,49 @@ pip install -r requirements.txt
 python -m googled_myself.run_audit --config sample_inputs/config.yml --dry-run
 # run tests
 pytest -q
+# Anchor Engine Core - Initialize & Run Workspace 
+git clone https://github.com/minerva-devs/anchor-engine-node.git
+cd anchor-engine-node
+pnpm install
+# Bypass root-level pipeline limits using explicit workspace filtering
+pnpm --filter engine start
+
+```
+## Quick evaluation commands
+
+###  Project 1: Googled_Myself (Personal Data Audit Pipeline)
+Clone and execute the sanitized Python audit tool in dry-run mode (no external web scraping queries are made by default):
+
+```bash
+# 1. Clone and enter the project directory
+git clone [https://github.com/minerva-devs/tech-portfolio.git](https://github.com/minerva-devs/tech-portfolio.git)
+cd tech-portfolio/projects/googled_myself
+
+# 2. Configure the environment
+cp .env.example .env
+python -m venv .venv
+source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+pip install -r requirements.txt
+
+# 3. Run a safe dry-run test using sample inputs
+python -m googled_myself.run_audit --config sample_inputs/config.yml --dry-run
+
+# 4. Run unit tests
+pytest -q
+```
+### ⚓ Project 2: Anchor Engine Node (Startup Memory Infrastructure)
+Clone, install, and initialize our core semantic memory engine layer. This uses an explicit workspace filter to bypass root-level script limitations and boot up the server:
+
+```bash
+# 1. Clone and enter the repository
+git clone [https://github.com/minerva-devs/anchor-engine-node.git](https://github.com/minerva-devs/anchor-engine-node.git)
+cd anchor-engine-node
+
+# 2. Install monorepo workspace dependencies
+pnpm install
+
+# 3. Target the sub-folder engine workspace and start the server on Port 3160
+pnpm --filter engine start
 ```
 
 Android quick check (prebuilt APK or emulator instructions in project README):
@@ -80,5 +130,12 @@ docker run --rm googled_myself:demo --config /app/sample_inputs/config.yml --dry
 - Key safety features included here: sample_inputs/ (sanitized), --dry-run default, .env.example, and runtime guard requiring explicit --confirm-live to run real queries.
 
 See full project README: /projects/googled_myself/README.md
+
+## Anchor Engine Node — Co-Founder & Product Infrastructure
+* **Purpose:** A deterministic, explainable, CPU‑only semantic memory layer utilizing a physics‑inspired graph algorithm (STAR) for long-term AI agent memory storage.
+* **Architecture & Disconnect Resolution:** Successfully architected the system's runtime configurations to isolate application environments out of the root folder into secure user spaces (`$HOME/.anchor/`). Remediated broken build pipelines in the root execution layer by restructuring dependency resolution paths and setting up explicit workspace routing targets (`--filter`) to bind the core server engine directly to Port 3160.
+* **Environment Controls:** Embedded robust data boundaries that shield internal configuration states while allowing configurable environment handling of API parameters via JSON-driven schema controls.
+
+See full project README: /engine/README.md
 
 ---
