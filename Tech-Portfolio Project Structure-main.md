@@ -15,10 +15,14 @@ as of 6/2/26
 
 **Repository Directory**
 
-├── `Data-Science/`
-├── `Java-Android-Mobile/`
-├── `googled_myself/`
-├── `README.md`
-└── `Tech-Portfolio Project Structure-main.md`
+  ├── `Data-Science/`
+  ├── `Java-Android-Mobile/`
+  ├── `anchor-engine-node/`
+  ├── `googled_myself/`
+  ├── `.gitattributes`
+  ├── `.gitmodules`
+  ├── `README.md`
+  └── `Tech-Portfolio Project Structure-main.md`
+
 
 
