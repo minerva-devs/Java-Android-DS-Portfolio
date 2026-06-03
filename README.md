@@ -1,9 +1,23 @@
-<h1>Tech Portfolio</h1>
-<h3>Java • Android • Data Science • Machine Learning • Systems</h3>
+# Minerva Franco — Data Science, Systems & Architecture Portfolio
 
-<p>This repository consolidates my work across software engineering, Android development, data science, machine learning, and systems‑level analysis. It includes production‑style Android applications, Java algorithmic implementations, machine‑learning workflows, and a standalone data‑audit pipeline. The projects reflect applied problem solving across mobile, analytical, and systems domains.</p>
+<h3>Startup Infrastructure • Java & Android • Data Science • Applied Systems</h3>
 
+[![CI](https://img.shields.io/badge/ci-py%20%2B%20java%20%2B%20ts-blue)]() [![tests](https://img.shields.io/badge/tests-passing-brightgreen)]() [![license](https://img.shields.io/badge/license-MIT-lightgrey)]()
+
+<p>This repository consolidates my engineering work across full-stack development, mobile architectures, applied data science, and systems-level analysis. Alongside standalone analytical pipelines and production-style Android applications, this portfolio features my work as a co-founder managing core product infrastructure and workspace optimization for complex distributed engines. These projects reflect reproducible, test-driven problem solving across mobile, analytical, and systems domains.</p>
 <hr>
+
+Co-founder and systems engineer specializing in production-ready software architectures, applied data science workflows, and deterministic AI memory infrastructure. This portfolio consolidates my work across:
+
+* **Startup Infrastructure:** Multi-workspace core engine services and deterministic AI memory layers.
+* **Mobile & Backend:** Clean Architecture Android applications (Java/Kotlin) paired with Spring Boot backends.
+* **Applied Data Science:** Privacy-preserving OSINT data auditing tools, reproducible pipelines, and targeted ML workflows.
+
+**Contact & Profiles:** 📩 minefq@yahoo.com • 💼 [LinkedIn](https://www.linkedin.com/in/minervacfranco) • 💻 [GitHub Portfolio](https://github.com/Minerva-Devs/tech-portfolio)
+
+
+
+
 
 <h2>Repository Structure</h2>
 
@@ -110,4 +124,4 @@ git push origin feature-branch
   <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/minervacfranco">https://www.linkedin.com/in/minervacfranco</a></li>
   <li><strong>GitHub Issues:</strong> Open a discussion anytime <a href="https://github.com/minerva-devs/tech-portfolio/issues"><img src="https://img.shields.io/github/issues/minerva-devs/tech-portfolio" alt="GitHub issues"></a></li>
 </ul>
----
+
