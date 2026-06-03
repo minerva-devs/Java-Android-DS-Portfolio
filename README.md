@@ -31,7 +31,7 @@
   <li><strong>Algorithmic Tasks</strong> – GCD, DNA complement, concurrency, FizzBuzz, etc.</li>
 </ul>
 
-<h3>3. Googled Myself — Data Audit and ML Pipeline 2026</h3>
+<h3>3. Googled Myself - Data Audit and ML Pipeline 2026</h3>
 <p>Modular Python project for automated personal‑data auditing and structured analysis.</p>
 
 <ul>
@@ -44,16 +44,28 @@
 
 <p><strong>Folder:</strong> <code>googled_myself/</code></p>
 
+<h3>4. Anchor Engine Node - Core Product Infrastructure 2026</h3>
+<p>Co-founder of a deterministic semantic memory engine layer designed for local‑first AI applications, optimizing structural, temporal, and semantic data retrieval (STAR protocol).</p>
+
+<ul>
+  <li><strong>Monorepo Engineering & Architecture</strong> – Managed core system alignment and resolved broken system pipelines across root workspaces and underlying engine sub-projects.</li>
+  <li><strong>Port & Network Configuration</strong> – Standardized configuration-driven infrastructure routing, mapping system entry points to dynamic configuration boundaries listening natively on port <code>3160</code>.</li>
+  <li><strong>Isolated Runtime Management</strong> – Preserved secure deployment schemas by decoupling data storage directories completely from the project workspace to local user boundaries (<code>$HOME/.anchor/</code>).</li>
+</ul>
+
+<p><strong>Folder:</strong> <code>engine/</code></p>
+
 <hr>
 
 <h2>Technologies</h2>
 
 <ul>
-  <li>Java, Kotlin, Android SDK, Jetpack, MVVM, Clean Architecture</li>
+  <li>Java, Kotlin, Android SDK, Jetpack, MVVM, Clean Architecture,  pnpm Workspaces, Monorepo Architecture</li>
   <li>Python, Jupyter, Pandas, NumPy, scikit‑learn, TensorFlow</li>
   <li>SQLite3, SQL, REST APIs, JSON, cloud environments</li>
-  <li>Git, GitHub Actions, CI/CD, containerized workflows</li>
+  <li>Git, GitHub Actions, CI/CD, containerized workflows, Network Port Configuration, Multi-folder Environment Isolation</li>
 </ul>
+
 
 <hr>
 
