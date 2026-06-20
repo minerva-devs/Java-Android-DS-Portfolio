@@ -33,6 +33,8 @@ Co-founder and systems engineer specializing in production-ready software archit
   <li><strong>Time Series & Simulation Workflows</strong></li>
 </ul>
 
+<p><strong>Folder:</strong> <code>Data-Science/</code></p>
+
 <h3>2. Java and Android Applications 2025</h3>
 <p>Java mobile projects using MVVM, Clean Architecture, REST APIs, and modern Jetpack libraries.</p>
 
@@ -44,6 +46,8 @@ Co-founder and systems engineer specializing in production-ready software archit
   <li><strong>Farkle App</strong> – Dice game implementation</li>
   <li><strong>Algorithmic Tasks</strong> – GCD, DNA complement, concurrency, FizzBuzz, etc.</li>
 </ul>
+
+<p><strong>Folder:</strong> <code>Java-Android-Mobile/</code></p>
 
 <h3>3. Googled Myself - Data Audit and ML Pipeline 2026</h3>
 <p>Modular Python project for automated personal‑data auditing and structured analysis.</p>
@@ -67,17 +71,17 @@ Co-founder and systems engineer specializing in production-ready software archit
   <li><strong>Isolated Runtime Management</strong> – Preserved secure deployment schemas by decoupling data storage directories completely from the project workspace to local user boundaries (<code>$HOME/.anchor/</code>).</li>
 </ul>
 
-<p><strong>Folder:</strong> <code>engine/</code></p>
+<p><strong>Folder:</strong> <code>anchor-engine-node/</code></p>
 
 <hr>
 
 <h2>Technologies</h2>
 
 <ul>
-  <li>Java, Kotlin, Android SDK, Jetpack, MVVM, Clean Architecture,  pnpm Workspaces, Monorepo Architecture</li>
-  <li>Python, Jupyter, Pandas, NumPy, scikit‑learn, TensorFlow</li>
-  <li>SQLite3, SQL, REST APIs, JSON, cloud environments</li>
-  <li>Git, GitHub Actions, CI/CD, containerized workflows, Network Port Configuration, Multi-folder Environment Isolation</li>
+  <li><strong>Languages:</strong> Java, Kotlin, Python, SQL, JavaScript, TypeScript</li>
+  <li><strong>Mobile & Infrastructure:</strong> Android SDK, Jetpack, MVVM, Clean Architecture, pnpm Workspaces, Monorepo Architecture</li>
+  <li><strong>Data Science & Analytics:</strong> Jupyter, Pandas, NumPy, scikit‑learn, TensorFlow, Power BI, SPSS, Excel Power Pivot</li>
+  <li><strong>Tooling & Environment:</strong> SQLite3, REST APIs, JSON, Git, Vite, Vitest, GitHub Actions, CI/CD, Network Port Configuration, Multi-folder Environment Isolation</li>
 </ul>
 
 
@@ -86,23 +90,19 @@ Co-founder and systems engineer specializing in production-ready software archit
 
 <h2>Getting Started</h2>
 
-```bash
-git clone https://github.com/minerva-devs/tech-portfolio.git
-cd tech-portfolio
-```
-
-<p>Open the appropriate folder in Android Studio, IntelliJ, or Jupyter Notebook.</p>
+<p>Open the appropriate folder in VS Code, Android Studio, IntelliJ, or your preferred IDE/ development environment.</p>
 
 <hr>
 
 <h2>Roadmap</h2>
 
 <ul>
-  <li>Expand ML pipelines</li>
-  <li>Add advanced Android UI/UX</li>
-  <li>Integrate cloud‑based deployments</li>
-  <li>Add Dockerized workflows</li>
-  <li>Publish an Android app to Google Play</li>
+  <li>Expand search footprints, build desktop app, bypass IDE execution dependencies.</li>
+  <li>Harden runtime lifecycles and benchmark core memory thresholds.</li>
+  <li>Expand ML pipelines and analytics workflows.</li>
+  <li>Add advanced Android UI/UX modules.</li>
+  <li>Integrate cloud‑based deployments and Dockerized multi-service workflows.</li>
+  <li>Publish an Android app to Google Play.</li>
 </ul>
 
 <hr>
