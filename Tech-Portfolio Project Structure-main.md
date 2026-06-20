@@ -1,28 +1,26 @@
 # Tech-Portfolio Project Structure 
-as of 6/2/26
+as of 6/19/26
 
 
-**Remote Branches**
+**Branch Trackers**
 
-* origin/main  * **YOU ARE HERE** *
-[https://github.com/minerva-devs/tech-portfolio/tree/main](https://github.com/minerva-devs/tech-portfolio/tree/main) 
-* origin/feature/integrate-googled-myself
-[https://github.com/minerva-devs/tech-portfolio/tree/feature/integrate-googled-myself](https://github.com/minerva-devs/tech-portfolio/tree/feature/integrate-googled-myself)
-* fork/workspace-startup (anchor engine)
-[https://github.com/minerva-devs/anchor-engine-node/tree/workspace-startup](https://github.com/minerva-devs/anchor-engine-node/tree/workspace-startup)
+* **`origin/main`** • *YOU ARE HERE (in tech-portfolio)*  
+  [https://github.com/minerva-devs/tech-portfolio/tree/main](https://github.com/minerva-devs/tech-portfolio/tree/main)
+* **`origin/feature/integrate-googled-myself`**  
+  [https://github.com/minerva-devs/tech-portfolio/tree/feature/integrate-googled-myself](https://github.com/minerva-devs/tech-portfolio/tree/feature/integrate-googled-myself)
+* **`fork/fix/workspace-startup`** *(anchor-engine-node)*  
+  • *Local-Only Development Branch*
 
---------------------------------------------------------------------------
+---
 
-**Repository Directory**
+## Repository Directory
 
-  ├── `Data-Science/`
-  ├── `Java-Android-Mobile/`
-  ├── `anchor-engine-node/`
-  ├── `googled_myself/`
-  ├── `.gitattributes`
-  ├── `.gitmodules`
-  ├── `README.md`
-  └── `Tech-Portfolio Project Structure-main.md`
-
-
-
+```text
+├── Data-Science/
+├── Java-Android-Mobile/
+├── anchor-engine-node/
+├── googled_myself/
+├── .gitattributes
+├── .gitmodules
+├── README.md
+└── Tech-Portfolio Project Structure-main.md
