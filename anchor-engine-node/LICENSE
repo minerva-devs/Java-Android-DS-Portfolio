@@ -1,0 +1,57 @@
+GNU AFFERO GENERAL PUBLIC LICENSE, Version 3, June 2025
+
+Copyright (c) 2026 Robert Balch II
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+PREAMBLE
+The purpose of this License is to promote a mode of software licensing that encourages reuse and sharing while protecting the rights of authors and ensuring that future users have the same freedoms as those who receive the software today. This License applies to any software program or other work that has been released under the terms described below.
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+0. Definitions.
+"Work" means the copyrightable material subject to this License. "Invariant Sections" are certain sections of the Work designated as invariant by the copyright holder. "Covering Text" means text that is part of a document covered by this License. "Secondary Sections" are appendices or front-matter written specifically for this License.
+
+The "Corresponding Source" for a work in object code form means all the source code needed to generate it, plus documentation and data files required to install and run the executable.
+
+1. Applicability.
+This License applies to any software program or other work that has been released under its terms. The copyright holder may add additional permissions or restrictions as long as they are consistent with this License.
+
+2. Verbatim Copying.
+You may copy and distribute verbatim copies of the Work's source code as you receive it, in any medium, provided you keep intact all notices stating that such copying is permitted under this License. You must cause the modified files to carry prominent notices stating that you changed them.
+
+3. Modification.
+You may modify your copy or copies of the Program or any portion of it, thus forming a work based on the Program. You may copy and distribute such modifications or works based on the Program under the terms of Section 2 above provided that you also meet all of these conditions:
+a) The modified work must carry prominent notices stating that you changed it.
+b) You must require that subsequent recipients of the modified work receive a copy of the Corresponding Source for the modified work.
+
+4. Combined Works.
+You may combine the Program with other works not subject to this License, and distribute the resulting combined work under Section 2 above, provided that you meet all of these conditions:
+a) The combined work must carry prominent notices stating that it contains a portion of the Program.
+b) You must require that subsequent recipients receive a copy of the Corresponding Source for the entire combined work.
+
+5. Distribution of Executable Versions.
+You may distribute executable versions of the Program or works based on it under Section 2 above provided that you also meet all of these conditions:
+a) The distribution must include a prominent notice attached to the executable stating that such copying is permitted under this License.
+b) You must require that subsequent recipients receive a copy of the Corresponding Source for the executable version.
+
+6. Aggregating or Linking.
+You may aggregate the Program with other programs not subject to this License, and distribute the resulting aggregate under Section 2 above provided that you meet all of these conditions:
+a) The aggregate must carry prominent notices stating that it contains a portion of the Program.
+b) You must require that subsequent recipients receive a copy of the Corresponding Source for the entire aggregate.
+
+7. Installation.
+You may install copies of the Program or works based on it under Section 2 above provided that you meet all of these conditions:
+a) The installation must include a prominent notice stating that such copying is permitted under this License.
+b) You must require that subsequent recipients receive a copy of the Corresponding Source for the installed version.
+
+8. Termination.
+You may not distribute or modify copies of the Program except in accordance with this License. If you fail to comply with any of these conditions, your license shall terminate automatically and all rights granted under this License shall cease.
+
+9. Revisions to This License.
+The copyright holder may revise this License from time to time as indicated by the version number that appears at the beginning of this document. You can use a revisioned version of this License for any work you distribute or modify, provided that you include a copy of the revised License with your distribution.
+
+10. How to Apply These Terms to Your Own Programs.
+If you develop a new program and wish it to be governed by these terms, you may do so by adding a notice to the source code files stating that they are subject to this License. You should also include a copy of this License with your distribution.
+
+END OF TERMS AND CONDITIONS

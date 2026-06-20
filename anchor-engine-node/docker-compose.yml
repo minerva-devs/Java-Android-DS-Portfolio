@@ -1,0 +1,68 @@
+services:
+  anchor-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anchor-engine:joss
+    container_name: anchor-engine
+    ports:
+      - "3160:3160"
+    volumes:
+      # Persistent data (database)
+      - anchor-data:/app/engine/context_data
+
+      # User data directories
+      - ./inbox:/app/inbox # Drop files here for auto-ingestion
+      - ./external-inbox:/app/external-inbox # External source files
+      - ./mirrored_brain:/app/mirrored_brain # Source of truth filesystem
+      - ./backups:/app/backups # Phoenix Protocol backups
+      - ./notebook:/app/notebook # Synonym rings, notes, outputs
+      # Optional: Mount user settings
+      # - ./user_settings.json:/app/user_settings.json:ro
+
+    environment:
+      - NODE_ENV=production
+      - PORT=3160
+      - PROJECT_ROOT=/app
+      - CONTEXT_DIR=/app/engine/context_data
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:3160/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+volumes:
+  anchor-data:
+    name: anchor-engine-joss-data
+
+# =============================================================================
+# Anchor Engine – JOSS Demo
+# =============================================================================
+#
+# Quick Start:
+#   docker compose up -d --build     # Build and start
+#   docker compose logs -f           # View logs
+#   docker compose down              # Stop
+#   docker compose down -v           # Stop and remove data
+#
+# Access:
+#   UI:     http://localhost:3160/search
+#   API:    http://localhost:3160/v1/memory/search
+#   Health: http://localhost:3160/health
+#
+# Usage:
+#   1. Drop files into ./inbox/ for automatic ingestion
+#   2. Search via the UI or API
+#   3. Backups saved to ./backups/
+#
+# =============================================================================

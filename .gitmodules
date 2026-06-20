@@ -1,4 +1,0 @@
-[submodule "anchor-engine-node"]
-	path = anchor-engine-node
-	url = https://github.com/minerva-devs/anchor-engine-node.git
-	branch = workspace-startup

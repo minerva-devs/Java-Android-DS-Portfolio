@@ -1,0 +1,5 @@
+dist-test/
+
+# Server logs and PIDs (personal runtime data)
+logs/*.log
+logs/*.pid

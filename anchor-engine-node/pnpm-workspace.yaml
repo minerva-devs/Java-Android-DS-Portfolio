@@ -1,0 +1,13 @@
+packages:
+  - engine
+
+allowBuilds:
+  esbuild: false
+  msw: false
+  sharp: true
+  tree-sitter-javascript: false
+  tree-sitter-typescript: false
+
+ignoredBuiltDependencies:
+  - esbuild
+  - msw

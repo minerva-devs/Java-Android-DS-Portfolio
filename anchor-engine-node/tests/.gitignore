@@ -1,0 +1,9 @@
+# Test runtime data - per-user ephemeral state
+integration_db/
+
+# Build artifacts from test TS compilation
+unit/*.d.ts
+unit/*.d.ts.map
+unit/*.js
+unit/*.js.map
+unit/legacy_scripts/

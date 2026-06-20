@@ -1,0 +1,46 @@
+# Source files (not needed in npm package)
+engine/src/
+engine/tests/
+engine/tsconfig.json
+engine/CMakeLists.txt
+engine/build-optimized.bat
+engine/bin/
+engine/context/
+engine/data/
+engine/native/
+mcp-server/src/
+mcp-server/tsconfig.json
+
+# Test files
+tests/
+**/*.test.ts
+**/*.test.js
+**/*.spec.ts
+**/*.spec.js
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.log
+logs/
+
+# Environment
+.env
+.env.*
+
+# Database files
+context_data/
+context.db
+*.db
+
+# Build artifacts (keep dist!)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large files
+*.wasm
+*.gguf

@@ -1,0 +1,251 @@
+# .gitignore - Anchor Engine Project
+# ============================================
+
+# 1. Dependencies
+# --------------------------------------------
+/node_modules/
+/engine/node_modules/
+/scripts/node_modules/
+mcp-server/node_modules/
+engine/src/native/node_modules/
+
+# 2. Build artifacts
+# --------------------------------------------
+/dist/
+/dist-win/
+/dist-android/
+engine/dist/
+engine/build/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# 3. Runtime data (all in $HOME/.anchor/)
+# --------------------------------------------
+.anchor/
+backup/
+/benchmarks/
+!/tests/benchmarks/
+dialog/
+distillation-v2-temp/
+embedding_cache/
+engines/
+file_store/
+logs/
+media/
+notebook/
+orchestration/
+reports/
+sessions/
+test_minimal_db/
+user_data/
+chats.json
+distillation-output.json
+heartbeat.md
+test-settings.json
+jobs.json
+
+# 4. Test outputs
+# --------------------------------------------
+*-output.txt
+*-results.txt
+*-results-full.txt
+*-test-output.txt
+*-live-fire-output.txt
+start_output.txt
+integration-test-output.txt
+live-fire-output.txt
+unit-test-output.txt
+unit-test-results.txt
+unit-results.txt
+unit-results-full.txt
+mjs-output.txt
+server-output.txt
+build-output.txt
+engine-build-output.txt
+engine-direct-tests.txt
+engine-error.txt
+engine-rebuild-output*.txt
+engine-root-tests.txt
+engine-tests-junit.xml
+engine-tests.txt
+npx-vitest-results.txt
+pnpm-start-tests.bat
+test-results.txt
+vite-aliases.txt
+test-file-persistence.cjs
+test-mcp-server.js
+test-mcp-server.mjs
+test-migration.mjs
+test-suite-live-fire.mjs
+playwright-report/
+playwright-report.json
+test-results/
+test-results-*/
+test-results-*.json
+test-results-*.xml
+e2e-results/
+e2e-results-*/
+test-api-endpoints.mjs
+
+# 5. QwenPaw & Agent config (NEVER COMMIT)
+# --------------------------------------------
+agent.json
+.qwenpaw/
+AGENTS.md
+BOOTSTRAP.md
+MEMORY.md
+MEMORY/*.md
+PROFILE.md
+SOUL.md
+QWEN.md
+tool_results/
+tool_result/
+missions/
+.qwen/
+.cline/
+.reme_store_v1
+.jules/
+.tooling/
+skills/
+.skill.json.lock
+
+# 6. IDE & OS files
+# --------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 7. Temporary & debug files
+# --------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+temp.txt
+tmp*.txt
+temp_*.txt
+temp_*.ts
+temp_diff.txt
+temp_index_diff.txt
+engine-start.log
+test-output.txt
+test-results.txt
+vitest-full-output.txt
+vitest-results.log
+LOGGING_CHANGES_SUMMARY.md
+.hermes-tmp.*
+temp_*.js
+tmp_*.json
+ts-sources.txt
+tsc-files-only.txt
+tsc-files.txt
+ts-files.txt
+check-db-content.mjs
+check-db-state.js
+check-db.cjs
+check-db.js
+check-db.mjs
+
+# 8. System JSON artifacts (migration/debug — not tracked)
+# --------------------------------------------
+system_config.json
+system_files.json
+system_ingest_status.json
+system_memory.json
+system_paths.json
+system_paths2.json
+system_status.json
+ingest-payload.json
+ingestion-response.json
+ingest_status.json
+compounds-table.json
+deep-search.json
+illuminate-search.json
+exact-search.json
+star-search-nostream.json
+atoms.json
+dep-search.json
+github_repos.json
+config_ingestion.json
+memory-list.json
+paper.bib
+AGENT.md
+QWEN.md
+
+# 9. Migration/debug scripts (not tracked)
+# --------------------------------------------
+engine-migration.mjs
+fix-db.mjs
+migrate-compounds.mjs
+addFunction.js
+add_isDistillationOutput.js
+append_function.js
+
+# 10. Migration artifacts (old, not needed)
+# --------------------------------------------
+MIGRATION_ANALYSIS.md
+MIGRATION_AUDIT_REPORT.md
+MIGRATION_COMPLETE.md
+MIGRATION_COMPLETION_PLAN.md
+MIGRATION_PLAN.md
+MIGRATION_SUMMARY.md
+TEST_ASSESSMENT.md
+TESTS-TROUBLESHOOTING.md
+TESTS_INVENTORY.md
+
+# 11. Root-level clutter (should be in proper locations)
+# --------------------------------------------
+PROJ_ASSESSMENT.md
+PROJ_ASSESSMENT.md.*
+PROJECT_ASSESSMENT.md
+PROJECT_ASSESSMENT.md.*
+PROJECT_TEST.md
+PROJECT_TEST.md.*
+project_settings.json
+project_settings.json.*
+PROJECT_SETTINGS.json
+PROJECT_STATE_SUMMARY.md
+CROSS_PLATFORM_SETUP.md
+zenodo.json
+
+# 12. User-specific config (never commit)
+# --------------------------------------------
+.env
+.npmrc
+.pm2rc
+.hermes-tmp.*
+
+# 13. NPM lockfile (pnpm is preferred)
+# --------------------------------------------
+package-lock.json
+
+# 14. Cleanup/fix scripts (one-off, deleted)
+# --------------------------------------------
+add_clean_mode.mjs
+apply_clean_mode.mjs
+apply_clean_mode_final.mjs
+comprehensive_fix.cjs
+comprehensive_fix.mjs
+final_clean_mode.mjs
+final_syntax_fix.mjs
+fix_all_blocks.mjs
+fix_provenance.mjs
+fix_source_path.mjs
+fix_syntax_errors.mjs
+node rewrite.mjs
+rewrite_blocks.mjs
+simple_fix.mjs
+simple_replace.cjs
+optimize_distiller.js
+update_clean_mode.js
+update_search_calls.js
+distilled_output.yaml
+ecosystem.config.js
+test-mcp-search.js  
+0
+build_errors.txt
+user_settings.json

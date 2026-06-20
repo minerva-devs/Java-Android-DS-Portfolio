@@ -1,0 +1,230 @@
+{
+    "_description": "Anchor Engine Configuration - Single Source of Truth",
+    "_version": "5.3.0",
+    "VERSION": "5.3.0",
+    "project_root": "",
+    "server": {
+      "host": "0.0.0.0",
+      "port": 3160,
+      "api_key": "",
+      "version": "5.3.0",
+      "health_endpoint": "/health"
+    },
+    "ui": {
+      "default_api_key": "",
+      "api_base_url": "",
+      "dev_proxy_target": "http://localhost:3160",
+      "version": "5.3.0"
+    },
+    "github": {
+      "_description": "GitHub Personal Access Token (PAT) for private repo access and higher rate limits",
+      "_token_help": "Generate at: https://github.com/settings/tokens (classic) or https://github.com/settings/personal-access-tokens (fine-grained)",
+      "_token_scopes": "Required scopes: 'repo' (private repos), 'public_repo' (public repos only)",
+      "token": "ghp_YOUR_PERSONAL_ACCESS_TOKEN_HERE",
+      "default_branch": "main",
+      "api_base_url": "https://api.github.com"
+    },
+    "paths": {
+      "_description": "All user data routes to anchor_root. Recommended: <USER_ROOT>/anchored_data/",
+      "anchor_root": "<ANCHOR_ROOT>",
+      "notebook": "${anchor_root}/notebook",
+      "inbox": "${anchor_root}/inbox",
+      "external_inbox": "${anchor_root}/external-inbox",
+      "distills": "${anchor_root}/distills",
+      "mirrored_brain": "${anchor_root}/mirrored_brain",
+      "sessions": "${anchor_root}/sessions",
+      "logs": "${anchor_root}/logs",
+      "backups": "${anchor_root}/backups",
+      "context_data": "${anchor_root}/context_data",
+      "test_dbs": "${anchor_root}/test-dbs",
+      "context": "engine/context",
+      "models": "models",
+      "dist": "dist",
+      "engine_bin": "engine/bin",
+      "engine_src": "engine/src",
+      "engine_dist": "engine/dist",
+      "engine_context": "engine/context",
+      "engine_plugins": "engine/plugins",
+      "desktop_overlay_src": "packages/desktop-overlay/src",
+      "desktop_overlay_dist": "packages/desktop-overlay/dist",
+      "notebook_dir": "${anchor_root}/notebook",
+      "inbox_dir": "${anchor_root}/inbox",
+      "external_inbox_dir": "${anchor_root}/external-inbox",
+      "mirrored_brain_dir": "${anchor_root}/mirrored_brain",
+      "context_data_dir": "${anchor_root}/context_data",
+      "distilled_output_dir": "${anchor_root}/distills"
+    },
+    "encryption": {
+      "enabled": false,
+      "password_storage": "env",
+      "password_env_var": "ANCHOR_MASTER_PASSWORD",
+      "min_confidence": 0.7,
+      "auto_encrypt_on_ingest": true,
+      "auto_decrypt_on_search": true,
+      "detect_nsfw": false,
+      "dry_run": false
+    },
+    "search": {
+      "strategy": "hybrid",
+      "hide_years_in_tags": true,
+      "whitelist": [],
+      "max_chars_default": 524288,
+      "max_chars_limit": 20000,
+      "fts_window_size": 1500,
+      "fts_padding": 750
+    },
+    "resource_management": {
+      "gc_cooldown_ms": 30000,
+      "max_atoms_in_memory": 10000,
+      "monitoring_interval_ms": 30000
+    },
+    "watcher": {
+      "debounce_ms": 2000,
+      "stability_threshold_ms": 2000,
+      "extra_paths": []
+    },
+    "context": {
+      "relevance_weight": 0.7,
+      "recency_weight": 0.3,
+      "clustering_gap_ms": 900000
+    },
+    "limits": {
+      "max_file_size_bytes": 104857600,
+      "max_content_length_chars": 5000,
+      "max_chunk_size_chars": 3000,
+      "max_summary_length_chars": 2000,
+      "date_extractor_scan_limit": 2000
+    },
+    "database": {
+      "wipe_on_startup": false,
+      "shared_buffers_mb": 256,
+      "effective_cache_size_mb": 512,
+      "work_mem_mb": 16,
+      "maintenance_work_mem_mb": 256
+    },
+    "memory": {
+      "heap_pressure_mb": 3000,
+      "throttle_start_mb": 2000,
+      "throttle_max_mb": 3500,
+      "emergency_stop_mb": 5000,
+      "search_results_batch_size": 20,
+      "enable_streaming_results": true
+    },
+    "low_resource": {
+      "enabled": false,
+      "max_recall_low": 5,
+      "max_recall_high": 20,
+      "max_concurrency": 1,
+      "search_batch_size": 10,
+      "ingest_batch_size": 5,
+      "vector_ingest_batch": 10
+    },
+    "ingestion": {
+      "concept_density": "high",
+      "tag_threshold": 0.7,
+      "dedup_strength": "aggressive",
+      "token_budget_default": 2000,
+      "ingestion_profile": "chat"
+    },
+    "density": {
+      "_description": "3-tier RAG dispatch thresholds for density: prefix queries. Controls how the external RAG pipeline decides retrieval intensity.",
+      "light_doc_threshold": 50,
+      "medium_doc_threshold": 5,
+      "light_rag_limit": 10,
+      "medium_rag_limit": 25,
+      "heavy_rag_limit": 0,
+      "_light_doc_threshold_help": "Molecule count >= this → light tier (fast retrieval)",
+      "_medium_doc_threshold_help": "Molecule count >= this → medium tier (balanced retrieval)",
+      "_heavy_tier_help": "Molecule count < medium_doc_threshold → heavy tier (exhaustive + radial distillation)",
+      "_light_rag_limit_help": "How many top documents external RAG should retrieve for light tier",
+      "_medium_rag_limit_help": "How many top documents external RAG should retrieve for medium tier",
+      "_heavy_rag_limit_help": "0 = retrieve all available documents"
+    },
+    "mcp": {
+      "_description": "Model Context Protocol server for AI agent memory",
+      "enabled": true,
+      "description": "Model Context Protocol server for AI agent memory",
+      "security_note": "Only enable when needed. MCP exposes your knowledge graph to connected AI clients.",
+      "allowed_clients": [],
+      "require_api_key": false,
+      "rate_limit_requests_per_minute": 120,
+      "max_query_results": 100,
+      "restrict_to_localhost": true,
+      "server_path": "${project_root}",
+      "mcp_server_binary": "${project_root}/engine/dist/mcp/server.js",
+      "allowed_operations": [
+        "query",
+        "read_file",
+        "get_stats",
+        "ingest",
+        "distill",
+        "illuminate",
+        "list"
+      ],
+      "blocked_operations": []
+    },
+    "agent_memory": {
+      "description": "Configuration for AI agent checkpoint distillation",
+      "checkpoint_interval_messages": 50,
+      "auto_distill": true,
+      "distill_output_path": "./local-data/distilled/",
+      "preserve_sessions": true,
+      "max_session_age_days": 30
+    },
+    "logging": {
+      "level": "info",
+      "structured": true,
+      "log_to_file": true,
+      "log_dir": "${anchor_root}/logs"
+    },
+    "streaming": {
+      "_description": "Streaming ingestion for large files (>10 MB). Reads files in windows instead of loading entire content into memory, keeping the event loop free for API requests during ingestion.",
+      "enabled": true,
+      "stream_threshold_bytes": 10485760,
+      "window_bytes": 1048576,
+      "lookahead_bytes": 65536,
+      "yield_interval_ms": 0,
+      "_stream_threshold_help": "Files larger than this use streaming path (default 10 MB)",
+      "_window_help": "Bytes to read per window from disk (default 1 MB)",
+      "_lookahead_help": "Extra bytes past window to find sentence boundary (default 64 KB)",
+      "_yield_help": "Milliseconds to yield event loop between windows (0 = setImmediate)"
+    },
+    "worker_threads": {
+      "_description": "Offload CPU-heavy ingestion to a separate thread so the main thread stays 100% responsive. Currently experimental — streaming path handles most cases.",
+      "enabled": false,
+      "max_workers": 1,
+      "ingest_queue_max": 100,
+      "_max_workers_help": "Number of worker threads for ingestion (1 is sufficient for most cases)",
+      "_ingest_queue_help": "Max files to queue before backpressure is applied"
+    },
+    "cron": {
+      "_description": "Scheduled tasks for periodic maintenance and data refresh.",
+      "enabled": false,
+      "daily_scrape_hour": 3,
+      "synonym_regeneration_hour": 4,
+      "db_vacuum_hour": 5,
+      "cache_prune_interval_minutes": 60,
+      "_daily_scrape_help": "Hour of day (0-23) to run the daily web scraper for external-inbox sources",
+      "_synonym_help": "Hour of day to regenerate synonym rings from corpus",
+      "_db_vacuum_help": "Hour of day to VACUUM ANALYZE the PGlite database",
+      "_cache_prune_help": "How often to prune stale entries from LRU caches"
+    }
+  },
+  "distiller": {
+    "similarity_threshold": 0.85,
+    "output_format": "decision-records"
+  },
+  "distillation": {
+    "_description": "Full-corpus distillation batch processing. The batch size is auto-tuned: min(config.batch_size, heap * heap_fraction / bytes_per_molecule, batch_ceiling).",
+    "batch_size": 5000,
+    "_batch_size_help": "Target molecules per batch query (default 5000 ≈ 10MB heap)",
+    "batch_ceiling": 20000,
+    "_batch_ceiling_help": "Hard upper limit regardless of available heap (prevents OOM on very large heaps)",
+    "heap_fraction": 0.25,
+    "_heap_fraction_help": "Fraction of available V8 heap to allocate to distillation (0.25 = 25%)",
+    "bytes_per_molecule": 2048,
+    "_bytes_per_molecule_help": "Estimated heap bytes per molecule during context inflation (2048 = 2KB)",
+    "batch_floor": 1000,
+    "_batch_floor_help": "Minimum batch size even on very constrained heaps (prevents infinite loops)"
+  }
+}

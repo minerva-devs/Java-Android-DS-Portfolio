@@ -1,0 +1,115 @@
+// This is a patch file to fix the collectCompounds function
+// Apply this after reading the original file
+
+async function* collectCompounds(
+  request: RadialDistillRequest,
+): AsyncGenerator<{ compoundId: string; content: string; source: string; timestamp: number }> {
+  const radius = request.radius || 2000;
+  const maxRadius = request.max_radius || 10000;
+  const effectiveRadius = Math.min(radius, maxRadius);
+
+  let conditions: string[] = [];
+  
+  // Query molecules directly (Phase 3 update - compounds table removed)
+  queryBase = `
+    SELECT DISTINCT
+      id as compound_id,
+      id as molecule_id,
+      source_path,
+      timestamp,
+      provenance,
+      start_byte,
+      end_byte,
+      content as content_preview
+    FROM molecules
+  `;
+
+  const params: any[] = []; // No longer need DEFAULT_PROVENANCE param
+
+  // Remove DEFAULT_PROVENANCE from params when no seed is provided - return ALL compounds
+  const effectiveParams = request.seed ? [...params] : [];
+
+  if (request.seed?.compound_ids?.length) {
+    conditions.push(`id = ANY($${effectiveParams.length + 1})`);
+    effectiveParams.push(request.seed.compound_ids);
+  }
+
+  if (request.seed?.buckets?.length) {
+    queryBase += ` JOIN atoms a ON a.compound_id = id WHERE EXISTS(SELECT 1 FROM unnest(a.buckets) as bucket WHERE bucket = ANY($${effectiveParams.length + 1})`;
+    effectiveParams.push(request.seed.buckets);
+  } else if (request.seed?.query) {
+    const tsQuery = request.seed.query.split(/\s+/).filter(t => t.length > 0).join(' | ');
+    queryBase += ` JOIN atoms a ON a.compound_id = id WHERE to_tsvector('simple', a.content) @@ to_tsquery('simple', $${effectiveParams.length + 1})`;
+    effectiveParams.push(tsQuery);
+  }
+
+  if (conditions.length > 0) {
+    queryBase += ' AND (' + conditions.join(' OR ') + ')';
+  }
+
+  queryBase += ' ORDER BY timestamp DESC, start_byte ASC';
+
+  const result = await db.run(queryBase, effectiveParams); // Fixed: use effectiveParams instead of params
+  const rows = result.rows as any[];
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    
+    try {
+      let content = '';
+      let source: string;
+      let timestamp: number;
+      
+      // Use molecule directly (Phase 3 update - compounds table removed)
+      const searchResult = {
+        id: row.molecule_id || '',
+        content: row.content_preview || '',
+        source: row.source_path || '',
+        timestamp: row.timestamp || Date.now(),
+        provenance: row.provenance || 'internal',
+        buckets: [],
+        tags: [],
+        epochs: '',
+        compound_id: row.compound_id, // Keep for compatibility
+        start_byte: row.start_byte || 0,
+        end_byte: row.end_byte || 0,
+        is_inflated: false,
+      };
+
+      const inflated = await ContextInflator.inflate([searchResult], effectiveRadius * 2, effectiveRadius);
+
+      if (inflated.length > 0 && inflated[0].content) {
+        content = inflated[0].content;
+        source = inflated[0].source;
+        timestamp = row.timestamp || Date.now();
+      } else {
+        // Fallback: try reading from disk directly using getMirrorPath
+        const mirrorPath = getMirrorPath(row.source_path, row.provenance);
+        if (mirrorPath && fs.existsSync(mirrorPath)) {
+          content = fs.readFileSync(mirrorPath, 'utf-8');
+          source = row.source_path;
+          timestamp = row.timestamp || Date.now();
+        } else {
+          StructuredLogger.warn('[Distill] Cannot find file for molecule', { path: row.source_path });
+          continue; // Skip this molecule if file not found
+        }
+      }
+
+      if (content) {
+        yield {
+          compoundId: searchResult.id || 'unknown',
+          content,
+          source,
+          timestamp,
+        };
+      }
+
+      if (isMobileEnvironment() && i % 5 === 0 && global.gc) {
+        global.gc();
+      }
+    } catch (e) {
+      StructuredLogger.error('[Distill] Error processing row', e);
+      continue; // Skip failed rows but keep going
+    }
+  }
+}

@@ -1,0 +1,55 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Node modules (will be installed in container)
+node_modules/
+**/node_modules/
+
+# Build outputs (will be built in container)
+dist/
+**/dist/
+engine/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Runtime data
+engine/context_data/
+mirrored_brain/
+inbox/
+external-inbox/
+backups/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+coverage/
+*.test.ts
+*.test.js
+tests/
+
+# Development configs
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# C++ build artifacts (will be rebuilt in container)
+cpp/build/

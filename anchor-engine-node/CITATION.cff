@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "STAR: Semantic Temporal Associative Retrieval - A Local-First Graph-Based Context Engine"
+authors:
+  - family-names: "Balch II"
+    given-names: "R.S."
+    orcid: "https://orcid.org/0009-0001-0476-1689"
+    affiliation: "Independent Researcher, New Mexico Tech Affiliated"
+version: 5.3.0
+date-released: 2026-06-10
+license: AGPL-3.0
+repository-code: "https://github.com/RSBalchII/anchor-engine-node"
+keywords:
+  - "information retrieval"
+  - "graph algorithms"
+  - "local-first AI"
+  - "personal knowledge management"
+  - "sparse retrieval"
+  - "MCP"
+  - "session index"
+abstract: "STAR (Semantic Temporal Associative Retrieval) is a local-first, graph-based information retrieval system designed to enable resource-constrained devices to navigate large-scale personal knowledge corpora. Unlike traditional dense vector retrieval systems that require loading complete indices into RAM, STAR implements a sparse bipartite graph approach that retrieves only relevant 'atoms' of information required for a given query. v5.2.0 adds streaming search/ingest, WASM-native Rust modules, Zod validation, and 34 active architecture standards."
