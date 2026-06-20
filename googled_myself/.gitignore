@@ -18,3 +18,7 @@ archive/
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Project-specific
+*notes.md
+*local-only/
