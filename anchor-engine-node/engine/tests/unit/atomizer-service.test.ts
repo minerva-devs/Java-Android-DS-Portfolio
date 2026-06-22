@@ -79,7 +79,7 @@ describe('AtomizerService', () => {
       });
 
       it('masks API keys', () => {
-        const input = 'Use key sk-abcdefghijklmnopqrstuvwxyz1234567890ABCD';
+        const input = 'Use key sk-abcdefghijklmnopqrstuvwxyz1234567890ABCD-FAKE-KEY-TEST';
         const result = service.sanitize(input, 'test.md', 'inbox');
         expect(result).not.toContain('sk-abcdefghijklmnopqrstuvwxyz1234567890ABCD');
         expect(result).toContain('sk-[REDACTED]');
