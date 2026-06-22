@@ -13,7 +13,7 @@ Co-founder and systems engineer specializing in production-ready software archit
 * **Mobile & Backend:** Clean Architecture Android applications (Java/Kotlin) paired with Spring Boot backends.
 * **Applied Data Science:** Privacy-preserving OSINT data auditing tools, reproducible pipelines, and targeted ML workflows.
 
-**Contact & Profiles:** 📩 minefq@yahoo.com • 💼 [LinkedIn](https://www.linkedin.com/in/minervacfranco) • 💻 [GitHub Portfolio](https://github.com/Minerva-Devs/tech-portfolio)
+**Contact & Profiles:** minefq@yahoo.com • [LinkedIn](https://www.linkedin.com/in/minervacfranco) • [GitHub Portfolio](https://github.com/Minerva-Devs/tech-portfolio)
 
 
 
