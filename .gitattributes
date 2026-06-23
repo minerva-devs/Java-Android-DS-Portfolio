@@ -1,3 +1,5 @@
 *.ipynb linguist-documentation
-*.ts linguist-documentation
-*.js linguist-documentation
+
+*.ts linguist-weight=0.1
+*.js linguist-weight=0.1
+*.html linguist-weight=0.1
