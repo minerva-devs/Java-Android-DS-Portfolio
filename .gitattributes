@@ -1,1 +1,2 @@
-*.ipynb linguist-documentation
+*.ts linguist-documentation
+*.js linguist-documentation
